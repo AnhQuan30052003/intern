@@ -5,14 +5,6 @@
 }
 
 /* For desktop (1920 * 1028) */
-
-#img2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
 main {
   width: 1920px;
   height: 1080px;
