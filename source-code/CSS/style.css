@@ -134,7 +134,6 @@ main {
   .content > h1 {
     font-size: 32px;
     font-weight: 700;
-    border: solid 1px;
     margin-left: 20px;
   }
 
