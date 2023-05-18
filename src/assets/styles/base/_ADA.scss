@@ -1,0 +1,15 @@
+.skip-link{
+  transform: translateY(-180%);
+  &:focus{
+    transform: translateY(0);
+    @apply opacity-100 pointer-events-auto;
+  }
+}
+
+a{
+  color: red;
+}
+
+li a{
+  color: black;
+}
