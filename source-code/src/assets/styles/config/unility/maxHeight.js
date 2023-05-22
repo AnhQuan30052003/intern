@@ -6,7 +6,8 @@ const maxHeight = {
   screen: '100vh',
   initial: 'initial',
   'none': 'none',
-  '2k': '2000px'
+  '2k': '2000px',
+  '1080': '1080px',
 }
 module.exports = {
   maxHeight
