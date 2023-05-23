@@ -60,7 +60,6 @@ module.exports = {
       translate: ['motion-safe'],
       display: ['group-hover']
     }
-
   },
   corePlugins: {
     transform: false,

@@ -26,9 +26,12 @@ const fontSize = {
   'h5-md': ['1.5rem'],
   'h6-md': ['1.25rem'],
   'btn': ['.875em', { lineHeight: '1.2' }],
-  '24': '24px',
-  '26': '26px',
-
+  16: '16px',
+  14: '14px',
+  20: '20px',
+  24: '24px',
+  26: '26px',
+  36: '36px'
 }
 module.exports = {
   fontSize
