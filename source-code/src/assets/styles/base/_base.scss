@@ -21,7 +21,7 @@
 
   h3,
   .h3 {
-    @apply text-h3 font-bold md:text-h3-md;
+    @apply text-h3 font-medium md:text-h3-md;
   }
 
   h4,
@@ -73,7 +73,8 @@
     @apply list-disc;
   }
   p {
-    @apply mb-15;
+    // @apply mb-15;
+    @apply mb-0 text-20;
   }
 }
 
