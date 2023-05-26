@@ -1,4 +1,7 @@
+// Slick slider
 import 'slick-carousel/slick/slick'
+import 'app-slider'
+
 // // js Custom
 import 'modules/FixHeight'
 
@@ -8,7 +11,6 @@ import 'modules/ConvertSvg'
 import 'modules/LazyLoadImage'
 
 import 'modules/FormAnimation'
-
 
 import 'modules/UserAgent'
 import 'modules/Header'

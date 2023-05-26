@@ -1,6 +1,6 @@
 const configs = require('./config')
 const mode = process.title === 'gulp' ? 'aot' : 'aot'
-console.log('====> Mode: Love you . . .', )
+console.log('====> System: Loading...99%', )
 module.exports = {
   content: [
     './src/html/**/*.html',
@@ -133,6 +133,7 @@ module.exports = {
       addComponents({
         '.container': {
           width: '100%',
+          height: 'auto',
           marginLeft: 'auto',
           marginRight: 'auto',
           paddingLeft: '26px',

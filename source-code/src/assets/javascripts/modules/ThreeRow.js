@@ -1,6 +1,6 @@
 export default class ThreeRow {
   constructor () {
-    this.$this = $('three-row')
+    this.$this = $('mod-three-row')
   }
   init() {
     if (this.$this.length) {
@@ -9,10 +9,13 @@ export default class ThreeRow {
   }
   Show() {
     $(document).ready(function() {
-      $('nav-icon').click(function() {
-        $(this).hide();
+      $('.nav').click(function() {
+        $('.nav').hide();
+        alert('Da duoc click');
       });
     });
   }
 }
 new ThreeRow().init()
+
+console.log('Run file ThreeRow.js');

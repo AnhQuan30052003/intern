@@ -8,48 +8,74 @@
 .slick-prev,
 .slick-next {
   position: absolute;
-  top: 50%;
   display: block;
   padding: 0;
   cursor: pointer;
-  background: transparent;
+  color: #043673;
   border: none;
   transform: translate(0, -50%);
   z-index: 11;
+  font-size: 30px;
+  top: -70px;
 
+  @media (min-width: 767px) {
+    top: 108%;
+  }
 }
 
 .slick-prev {
-  left: -25px;
+  right: 40px;
+  @media (min-width: 1280px) {
+    left: -90%;
+  }
 }
 
-
 .slick-next {
-  right: -25px;
+  right: 0px;
+  @media (min-width: 1280px) {
+    left: -85%;
+  }
 }
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
-  display: block;
+  top: -30px;
   width: 100%;
   padding: 0;
+  padding-right: 70px;
   margin: 0;
   text-align: center;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+
+  @media (min-width: 767px) {
+    top: 115%;
+    justify-content: end;
+    gap: 55px;
+    padding-right: 100px;
+  }
+
+  @media (min-width: 1119px) {
+    justify-content: start;
+    padding-right: 0;
+    left: 0;
+  }
 
   li {
     position: relative;
-    display: inline-block;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
     padding: 0;
-    margin: 0 8px;
     margin-bottom: 0;
     cursor: pointer;
 
     &::before {
       display: none;
     }
-
+    
     button {
       cursor: pointer;
       border-radius: 50%;
@@ -58,7 +84,7 @@
 
       &::after {
         content: "";
-        @apply absolute w-5 h-5 top-0 left-0 block rounded-full bg-primary-100;
+        @apply absolute w-5 h-5 top-0 left-0 block rounded-full bg-gray-100 w-27 md:w-35 h-1;
         transition: 0.3s;
         transform: translateX(50%) translateY(50%);
       }
@@ -68,9 +94,10 @@
     &.slick-active {
       button {
         &::after {
-          @apply bg-primary-200;
+          height: 3px;
+          top: -1px;
+          @apply bg-blue-200;
         }
-
       }
     }
   }
@@ -83,4 +110,9 @@
       display: none;
     }
   }
+}
+
+.slider-items {
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.05);
+  padding: 50px 20px;
 }

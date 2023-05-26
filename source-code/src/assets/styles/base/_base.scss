@@ -21,7 +21,7 @@
 
   h3,
   .h3 {
-    @apply text-h3 font-medium md:text-h3-md;
+    @apply font-medium md:text-h3-md lg:text-28 xl:text-36;
   }
 
   h4,
@@ -31,7 +31,7 @@
 
   h5,
   .h5 {
-    @apply text-h5 font-bold;
+    @apply text-h5 font-bold md:text-18 lg:text-h5;
   }
 
   h6,

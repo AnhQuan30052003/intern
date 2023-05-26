@@ -53,3 +53,7 @@
 #__bs_notify__{
   display: none !important;
 }
+
+.content-box {
+  @apply bg-gray-400 flex py-10 pr-25 mb-4
+}

@@ -32,6 +32,7 @@ const fontSize = {
   20: '20px',
   24: '24px',
   26: '26px',
+  28: '28px',
   36: '36px'
 }
 module.exports = {
