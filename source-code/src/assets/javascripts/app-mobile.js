@@ -1,8 +1,7 @@
 // Slick slider
 import 'slick-carousel/slick/slick'
 import 'app-slider'
-
-
+import 'modules/ThreeRow'
 
 // // js Custom
 import 'modules/FixHeight'

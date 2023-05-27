@@ -3,15 +3,19 @@ export default class ThreeRow {
     this.$this = $('mod-three-row')
   }
   init() {
-    if (this.$this.length) {
-      this.Show();
-    }
+    this.showHidden();
   }
-  Show() {
+  showHidden() {
     $(document).ready(function() {
       $('.nav').click(function() {
-        $('.nav').hide();
-        alert('Da duoc click');
+        if ($('.content').is(':hidden')) {
+          $('.content').slideDown();
+          $('.plus').attr('src', '../../assets/images/sub.svg');
+        }
+        else {
+          $('.content').slideUp();
+          $('.plus').attr('src', '../../assets/images/plus.svg');
+        }
       });
     });
   }

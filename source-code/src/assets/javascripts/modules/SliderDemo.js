@@ -12,6 +12,7 @@ export default class SliderDemo {
       slidesToShow: 3,
       slidesToScroll: 1,
       dots: true,
+      arrows: true,
       // centerMode: true,
       focusOnSelect: true,
       adaptiveHeight: true,
