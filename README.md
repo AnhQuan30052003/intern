@@ -1,4 +1,4 @@
-﻿# Github: Nguyễn Anh Quân - Thực tập sinh công ty 9th Wonder #
+Github: Nguyễn Anh Quân - Thực tập sinh công ty 9th Wonder
 
 Nhiệm vụ tuần 3:
 - Học jquery và apply vào module hiện tại.
