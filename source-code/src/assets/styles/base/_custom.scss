@@ -54,6 +54,10 @@
   display: none !important;
 }
 
-.content-box {
-  @apply bg-gray-400 flex py-10 pr-25 mb-4
+.box-title {
+  @apply flex py-10 pr-25 mb-4
+}
+
+.box-content {
+  @apply px-17 mb-20 text-16 font-normal text-gray-300 max-w-3xl
 }
