@@ -1,10 +1,9 @@
-﻿Github: Nguyễn Anh Quân - Thực tập sinh công ty 9th wonder
+﻿# Github: Nguyễn Anh Quân - Thực tập sinh công ty 9th Wonder #
 
-Nhiệm vụ tuần 2:
--	setup sage wordpress template.
-- cài nodejs 12-14
-- cài composer
-- sau khi cài composer và nodejs thì tới folder theme chạy: composer i, sau đó chạy tiếp: npm i
-- sau khi chạy xong thì dùng 2 lệnh là npm run start để chạy dev và npm run build:production đề build code (trong package.jcon có note rõ)
-- tạo mới 1 module
-- cắt module mới trong template sage vs tailwindcss (yêu cầu đọc qua document trước)
+Nhiệm vụ tuần 3:
+- Học jquery và apply vào module hiện tại.
+- Tạo mới module js và vẫn dụng jquery trong đó.
+- Đọc Scss để biết các chức năng của nó.
+- Cắt mới 1 module có dùng slick slider
+- Style typography cho h1, h2, h3, h4, h5, h6, a, ul, li, và body (thẻ p chính là thẻ body).
+- Hoàn thành bài tập cắt module và đưa lên git
