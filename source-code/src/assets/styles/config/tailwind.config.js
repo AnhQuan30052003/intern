@@ -138,6 +138,7 @@ module.exports = {
           marginRight: 'auto',
           paddingLeft: '26px',
           paddingRight: '26px',
+          minWidth: '320px',
           '@screen lg': {
             maxWidth: '1000px',
             paddingLeft: '48px',

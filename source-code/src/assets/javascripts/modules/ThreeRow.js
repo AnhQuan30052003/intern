@@ -9,20 +9,20 @@ export default class ThreeRow {
     $(document).ready(function() {
       $('.box-title').click(function() {
         var boxContent = $(this).siblings(".box-content");
-        var $image = $(this).find('img');
+        var image = $(this).find('img');
         var speed = 250;
 
         if (boxContent.is(':hidden')) {
           boxContent.slideDown(speed);
           $(this).removeClass("bg-gray-400 text-black");
           $(this).addClass("bg-blue-300 text-white");
-          $image.attr('src', '../../assets/images/sub.svg');
+          image.attr('src', 'assets/images/sub.svg');
         }
         else {
           boxContent.slideUp(speed);
           $(this).removeClass("bg-blue-300 text-white");
           $(this).addClass("bg-gray-400 text-black");
-          $image.attr('src', '../../assets/images/plus.svg');
+          image.attr('src', 'assets/images/plus.svg');
         }
       });
     });
