@@ -9,7 +9,7 @@ export default class SliderDemo {
   }
   addSlick () {
     this.$this.find('.slider').slick({
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
       arrows: true,

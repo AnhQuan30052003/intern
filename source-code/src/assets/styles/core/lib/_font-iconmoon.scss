@@ -25,8 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-spinner:before {
-  content: "\e909";
+.icon-sup:before {
+  content: "\e910";
+}
+.icon-khien:before {
+  content: "\e911";
+}
+.icon-car:before {
+  content: "\e912";
+}
+.icon-plus1:before {
+  content: "\e90e";
+}
+.icon-sub:before {
+  content: "\e90f";
 }
 .icon-cashapp:before {
   content: "\e908";
@@ -39,11 +51,11 @@
 .icon-icon-search:before {
   content: "\e905";
 }
-.icon-angle-double-right:before {
-  content: "\e903";
+.icon-plus:before {
+  content: "\e90d";
 }
-.icon-angle-double-left:before {
-  content: "\e904";
+.icon-spinner:before {
+  content: "\e909";
 }
 .icon-calendar:before {
   content: "\e900";
@@ -80,6 +92,12 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-angle-double-right:before {
+  content: "\e903";
+}
+.icon-angle-double-left:before {
+  content: "\e904";
 }
 .icon-mail-envelope-closed2:before {
   content: "\e902";
