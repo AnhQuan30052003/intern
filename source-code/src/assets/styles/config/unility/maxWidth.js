@@ -45,6 +45,12 @@ const maxWidth = {
   '1000': '1000px',
   '1300': '1300px',
 }
+
+let max = 500;
+for (let i = 0; i <= max; i++) {
+  maxWidth[i] = i * 2 + 'px';
+}
+
 module.exports = {
   maxWidth
 }

@@ -137,20 +137,22 @@ module.exports = {
           marginLeft: 'auto',
           marginRight: 'auto',
           paddingLeft: '26px',
-          paddingRight: '26px',
+          paddingRight: '26px', 
           minWidth: '320px',
           '@screen lg': {
             maxWidth: '1000px',
-            paddingLeft: '48px',
+            paddingLeft: '48px', 
             paddingRight: '48px',
           },
-          '@screen xl': {
-            maxWidth: '1110px',
-            paddingLeft: '70px',
-            paddingRight: '70px',
+          '@screen xl': { 
+            maxWidth: '1200px',
+            // paddingLeft: '70px',
+            // paddingRight: '70px',
+            paddingLeft: '0px',
+            paddingRight: '0px'
           },
           '@screen 2xl': {
-            maxWidth: '1390px'
+            maxWidth: '1600px'
           }
         },
         '.container.option-v2': {

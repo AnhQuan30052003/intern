@@ -1,7 +1,7 @@
 const { rem, lineHeight } = require('../utils')
 const fontSize = {
   xs: ['0.75rem', { lineHeight: '1' }],
-  sm: ['0.875rem', { lineHeight: '1.25' }],
+  sm: ['0.875rem', { lineHeight: '1.25' }], 
   base: ['1rem', { lineHeight: '1.75' }],
   lg: ['1.125rem'],
   xl: ['1.25rem'],
@@ -26,18 +26,13 @@ const fontSize = {
   'h5-md': ['1.5rem'],
   'h6-md': ['1.25rem'],
   'btn': ['.875em', { lineHeight: '1.2' }],
-  14: '14px',
-  16: '16px',
-  18: '18px',
-  20: '20px',
-  24: '24px',
-  26: '26px',
-  28: '28px',
-  30: '30px',
-  32: '32px',
-  36: '36px',
-  100: '100px'
 }
+
+let max = 100;
+for (let i = 1; i <= max; i++){
+  fontSize[i] = i + 'px';
+}
+
 module.exports = {
   fontSize
 }

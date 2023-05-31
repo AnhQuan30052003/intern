@@ -26,7 +26,8 @@
 
   h4,
   .h4 {
-    @apply text-h4;
+    @apply text-24 font-medium;
+    line-height: 140%;
   }
 
   h5,

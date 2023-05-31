@@ -10,7 +10,7 @@ export default class ThreeRow {
       $('.box-title').click(function() {
         var boxContent = $(this).siblings(".box-content");
         var image = $(this).find('img');
-        var speed = 250;
+        var speed = 300;
 
         if (boxContent.is(':hidden')) {
           boxContent.slideDown(speed);
