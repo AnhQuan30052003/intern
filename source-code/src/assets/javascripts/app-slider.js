@@ -1,5 +1,4 @@
 // import 'slick-carousel/slick/slick'
-import 'modules/SlickSlider'
-import 'modules/SliderDemo'
+import 'modules/Testimonials'
 
 console.log('Run file app-slider.js');

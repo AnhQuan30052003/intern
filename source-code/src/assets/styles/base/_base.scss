@@ -21,7 +21,7 @@
 
   h3,
   .h3 {
-    @apply font-medium md:text-h3-md lg:text-28 xl:text-36;
+    @apply font-medium md:text-h3-md;
   }
 
   h4,
@@ -80,7 +80,6 @@
 }
 
 a {
-  @apply text-primary-100 underline hover:no-underline hover:text-primary-200;
   &:-webkit-any-link:focus-visible {
     outline-offset: 3px;
   }
