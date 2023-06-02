@@ -5,6 +5,12 @@ const minHeight = {
   banner: '456px',
   '30': '60px',
 }
+
+let max = 1000;
+for (let i = 0; i <= max; i++) {
+  minHeight[i] = i * 2 + 'px';
+}
+
 module.exports = {
   minHeight
 }

@@ -10,8 +10,6 @@ export default class Testimonials {
   addSlick () {
     this.$this.find('.slider').slick({
       slidesToShow: 3,
-      slidesToScroll: 1,
-
       dots: true,
       arrows: true,
       rows: 0,
@@ -28,7 +26,6 @@ export default class Testimonials {
           breakpoint: 1200,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
             centerMode: false,
           }
         },
@@ -36,7 +33,6 @@ export default class Testimonials {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
             centerMode: false,
           }
         }
