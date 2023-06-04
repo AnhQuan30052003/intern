@@ -1,0 +1,39 @@
+.mod-footer-sign-up {
+  .phone > p {
+    @apply text-25 font-medium;
+  }
+
+  .title > p {
+    @apply font-semibold;
+  }
+
+  .row-footer > p {
+    @apply text-12 text-gray-500;
+  }
+
+  .row-footer > p:nth-child(1) {
+    @apply mb-10;
+  }
+
+  h5 {
+    @apply text-20;
+    @apply xl:text-18;
+  }
+
+  .row-body > p {
+    @apply text-gray-500;
+  }
+
+  .row-header > div > p,
+  .row-body > p {
+    @apply font-semibold text-16 text-gray-300;
+  }
+
+  .shop,
+  .learn,
+  .support,
+  .company {
+    @apply w-full p-20 pr-0;
+    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:w-1/4 xl:pl-20;
+  }
+}

@@ -14,26 +14,24 @@ export default class Testimonials {
       arrows: true,
       rows: 0,
 
-      centerMode: true,
+      variableWidth: true,
       focusOnSelect: true,
       
-      dotsClass: 'button-dots',
-      prevArrow: '<button class="button-prev arrows h1 text-primary-100"><span class="icomoon icon-chevron-left"></span><span class="sr-only">Prev slider</span></button>',
-      nextArrow: '<button class="button-next arrows h1 text-primary-100"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>',
+      dotsClass: 'btn-dots',
+      prevArrow: '<button class="btn-prev arrows h1 text-blue-300"><span class="icomoon icon-chevron-left"></span><span class="sr-only">Prev slider</span></button>',
+      nextArrow: '<button class="btn-next arrows h1 text-blue-300"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>',
 
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1280,
           settings: {
             slidesToShow: 2,
-            centerMode: false,
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            centerMode: false,
           }
         }
       ]

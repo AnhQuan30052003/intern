@@ -3,7 +3,6 @@ const minHeight = {
   full: '100%',
   screen: '100vh',
   banner: '456px',
-  '30': '60px',
 }
 
 let max = 1000;

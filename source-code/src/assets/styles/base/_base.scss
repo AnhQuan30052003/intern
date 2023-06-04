@@ -21,7 +21,7 @@
 
   h3,
   .h3 {
-    @apply font-medium md:text-h3-md;
+    @apply font-medium text-26;
   }
 
   h4,
@@ -74,8 +74,7 @@
     @apply list-disc;
   }
   p {
-    // @apply mb-15;
-    @apply mb-0 text-20;
+    @apply text-16 font-normal;
   }
 }
 
@@ -107,8 +106,11 @@ table{
   }
 }
 
-.p {
-  @apply font-semibold text-16 text-gray-300
+@layer utilities {
+  .left-none { left: unset; }
+  .right-none { right: unset; }
+  .top-none { top: unset; }
+  .bottom-none { bottom: unset; }
 }
 
 input::placeholder {

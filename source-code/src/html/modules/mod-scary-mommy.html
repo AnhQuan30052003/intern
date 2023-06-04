@@ -1,19 +1,22 @@
-<section class="module mod-scary mommy">
+<section class="module mod-scary-mommy">
   <div class="container px-0">
-    <div class="w-full h-full py-30 px-10 lg:p-20 md:p-24 bg-blue-300 flex flex-col gap-8 md:flex-row lg:h-200 xl:h-250 2xl:p-50">
-      <div class="image md:w-1/2">
-        <img class="w-full h-full lg:hidden" src="../../assets/images/ảnh-nền-scary-mommy-mobile.png" alt="">
-        <img class="w-full h-full hidden lg:block" src="../../assets/images/ảnh-nền-scary-mommy-desktop.png" alt="">
+    <div class="main w-full py-30 px-10 bg-blue-300 flex flex-col gap-8 xl:p-20 md:p-24 md:flex-row md:max-h-220 2xl:max-h-400 2xl:p-50">
+      <div class="image w-full h-auto md:w-1/2">
+        <picture class="image w-full">
+          <source media="(min-width:1200px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/ảnh-nền-scary-mommy-desktop.png">
+          <img class="lazy w-full h-175 object-cover md:h-172 xl:h-auto" data-src="../../assets/images/ảnh-nền-scary-mommy-mobile.png" alt="" src="{{imagesBase64}}">
+        </picture>
       </div>
 
-      <div class="content h-auto bg-white py-20 px-10 flex flex-col md:w-1/2 justify-center items-center lg:px-30 xl:px-50 xl:gap-20">
+      <div class="content w-full h-auto bg-white py-20 px-20 flex flex-col justify-center items-center xl:px-30 2xl:px-50 2xl:gap-10 md:w-1/2">
         <div class="content-box text-center">
           <h4>“If you’re a “bells and whistles” kind of person, think of this high-tech wonder as the Cadillac of platform bed frames.”</h4>
         </div>
         <div class="content-logo self-center w-85 max-w-400">
-          <img class="w-full h-full" src="../../assets/images/scary-mommy.png" alt="">
+          <img src="../../assets/images/scary-mommy.png" alt="">
         </div>
       </div>
     </div>
   </div>
 </section>
+

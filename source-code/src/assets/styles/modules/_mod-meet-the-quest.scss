@@ -1,0 +1,14 @@
+.mod-meet-the-quest {
+  .title > h3 {
+    @apply text-26 font-bold m-0;
+  }
+
+  a > p {
+    @apply text-14 m-0;
+  }
+
+  .item-image > img {
+    @apply w-full object-cover max-h-115 min-h-115;
+    @apply md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
+  }
+}

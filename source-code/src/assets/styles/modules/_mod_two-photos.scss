@@ -1,0 +1,24 @@
+.mod-two-photos {
+  a > p {
+    @apply text-14 text-blue-300 m-0 font-bold;
+  }
+
+  above-content > p,
+  bellow-content > p {
+    @apply text-gray-300 leading-6 md:leading-7
+  }
+
+  bellow-content > p {
+    @apply xl:pr-12
+  }
+
+  h3 {
+    @apply md:text-24 font-semibold leading-9 mb-2.5 2xl:text-36;
+  }
+
+  .above-image > img,
+  .bellow-image >img {
+    @apply w-full object-cover;
+    @apply md:h-210 xl:h-auto;
+  }
+}

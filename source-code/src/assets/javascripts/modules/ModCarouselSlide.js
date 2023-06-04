@@ -35,13 +35,13 @@ export default class ModCarouselSlide {
       appendArrows: sliderEl.find('.controls'),
       autoplay: isAutoPlaySlide,
       prevArrow: `
-      <button type="button" class="previous slick-prev button-prev arrows h1 text-primary-500 hover:text-primary-100" aria-controls="${sliderId}">
+      <button type="button" class="previous slick-prev arrows h1 text-primary-500 hover:text-primary-100" aria-controls="${sliderId}">
       <span class="icomoon icon-chevron-left"></span>
       <span class="sr-only">Previous Slide</span>
       </button>
       `,
       nextArrow: `
-      <button type="button" class="previous slick-next button-next arrows h1 text-primary-500 hover:text-primary-100" aria-controls="${sliderId}">
+      <button type="button" class="previous slick-next arrows h1 text-primary-500 hover:text-primary-100" aria-controls="${sliderId}">
       <span class="icomoon icon-chevron-right"></span>
       <span class="sr-only">Next slider</span>
       </button>

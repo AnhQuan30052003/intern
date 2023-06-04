@@ -1,4 +1,3 @@
-let max = 500
 let p = 0
 let Space = {
   0: '0px',
@@ -13,7 +12,8 @@ let Space = {
   '100vh': '100vh'
 }
 
-for (let i = 0; i < max; i++) {
+let max = 1000
+for (let i = 0; i < max; i+=0.5) {
   Space[i] = i * 2 + 'px'
   p = i + 'p'
   Space[p] = i + '%'
