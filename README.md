@@ -4,7 +4,7 @@ Nhiệm vụ tuần 4:
 - Hoàn thành 1 page vs những module đã note trong video.
 - Code đúng file.
 - Typography.
-- Button .
+- Button.
 - Setting config của tailwind theo design.
 - Page load lên phải giống design > 90%.
 - Đặt tên phải đúng.

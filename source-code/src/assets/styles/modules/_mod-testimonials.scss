@@ -79,11 +79,11 @@
   }
 
   .title > h3 {
-    @apply font-bold text-30;
+    @apply font-bold text-30 m-0;
   }
 
   .title > a > p {
-    @apply text-14 font-bold;
+    @apply text-14 font-bold m-0;
   }
 
   .items-footer > h6 {

@@ -24,9 +24,13 @@
     @apply text-gray-500;
   }
 
-  .row-header > div > p,
+  .row-header > ul > li > a > p,
   .row-body > p {
     @apply font-semibold text-16 text-gray-300;
+  }
+
+  .row-header > ul > li > a > p:hover {
+    @apply text-primary-100;
   }
 
   .shop,
@@ -34,6 +38,9 @@
   .support,
   .company {
     @apply w-full p-20 pr-0;
-    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:w-1/4 xl:pl-20;
+    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:pl-20;
   }
+   ul {
+    list-style: none;
+   }
 }

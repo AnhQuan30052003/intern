@@ -1,0 +1,26 @@
+.mod-adjust {
+  h1 {
+    @apply text-36 md:text-42 2xl:text-72;
+  }
+
+  p {
+    @apply font-medium text-20 md:text-18 mb-15 md:pr-100 xl:pr-0;
+    line-height: 30px;
+  }
+
+  .btn-play > p {
+    @apply font-bold text-14 m-0;
+  }
+
+  .box-content {
+    @media (min-width: 1200px) {
+      transform: translateY(-50%);
+    }
+  }
+  
+  .frame {
+    @media (min-width: 1200px) {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
