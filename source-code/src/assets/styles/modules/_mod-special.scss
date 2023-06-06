@@ -1,3 +1,33 @@
 .mod-special {
+  ul {
+    list-style: none;
+    @apply m-0 p-0;
+  }
+
+  .SWO > ul > li {
+    @apply my-5;
+  }
   
+  p {
+    @apply m-0 text-16 font-medium;
+    line-height: 21px;
+  }
+
+  .nav-1 > p {
+    @apply text-14 font-normal;
+  }
+
+  .nav-1 > div > p {
+    @apply font-bold text-blue-300;
+  }
+
+  .icon-my-account {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+  }
+
+  .ABB > ul > li > p {
+    @apply font-bold text-18;
+  }
 }
