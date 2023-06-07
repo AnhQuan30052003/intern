@@ -29,8 +29,8 @@
     @apply font-semibold text-16 text-gray-300;
   }
 
-  .row-header > ul > li > a > p:hover {
-    @apply text-primary-100;
+  .row-header > ul > li:hover > a > p {
+    @apply underline text-blue-300;
   }
 
   .shop,
