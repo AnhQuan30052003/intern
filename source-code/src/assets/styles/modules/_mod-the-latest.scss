@@ -1,7 +1,6 @@
 .mod-the-latest {
   .item-image > img {
-    @apply w-full object-cover h-115;
-    @apply md:h-125 xl:h-150;
+    @apply w-full object-cover h-115 md:h-125 xl:h-150;
   }
 
   h3 {

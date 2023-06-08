@@ -2,27 +2,22 @@
   // For slick slider
   .btn-prev,
   .btn-next {
-    @apply absolute block p-0 cursor-pointer text-blue-300 border-none outline-none text-30 -top-45 w-15;
-    @apply xl:right-none xl:top-130 2xl:top-135;
-    z-index: 11;
+    @apply absolute block p-0 cursor-pointer text-blue-300 border-none outline-none text-30 -top-45 w-15 z-11
+      xl:right-none xl:top-130 2xl:top-135;
   }
   
   .btn-prev {
-    @apply right-40;
-    @apply md:right-60;
-    @apply xl:-left-6;
+    @apply right-40 md:right-60 xl:-left-6
   }
   
   .btn-next {
-    @apply right-20;
-    @apply md:right-40;
-    @apply xl:left-12;
+    @apply right-20 md:right-40 xl:left-12;
   }
   
   .btn-dots {
-    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18;
-    @apply md:justify-end md:right-45 md:gap-27.5 xl:gap-17;
-    @apply xl:justify-start xl:pr-0 xl:top-160 xl:-left-7 2xl:top-165;
+    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+      md:justify-end md:right-45 md:gap-27.5 xl:gap-17
+      xl:justify-start xl:pr-0 xl:top-160 xl:-left-7 2xl:top-165;
     
     li {
       @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
@@ -67,19 +62,18 @@
 
   // For file code
   h3 {
-    @apply font-sans font-medium text-26;
-    @apply xl:text-24 2xl:text-36;
+    @apply font-sans font-medium text-26
+      xl:text-24 2xl:text-36;
     line-height: 140%;
   }
 
   p {
-    line-height: 24px;
-    @apply text-gray-300 text-16 font-normal;
+    @apply text-gray-300 text-16 font-normal leading-24;
   }
 
   .box-image > img {
-    @apply w-full object-cover h-115;
-    @apply md:h-125 xl:h-150 2xl:h-220;
+    @apply w-full object-cover h-115
+      md:h-125 xl:h-150 2xl:h-220;
   }
 
   a > span {
@@ -88,6 +82,9 @@
 
   a {
     @apply flex gap-4;
+    &:hover {
+      @apply text-primary-200;
+    }
   }
    
   a > img {

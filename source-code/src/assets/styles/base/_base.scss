@@ -82,6 +82,9 @@ a {
   &:-webkit-any-link:focus-visible {
     outline-offset: 3px;
   }
+  &:hover {
+    @apply text-primary-200;
+  }
 }
 
 button{

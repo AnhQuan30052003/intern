@@ -14,6 +14,15 @@ const lineHeight = {
   9: '2.25rem',
   10: '2.5rem'
 }
+
+let p = 0;
+let max = 100;
+for (let i = 0; i <= max; i++) {
+  lineHeight[i] = i + 'px';
+  p = i + 'p';
+  lineHeight[p] = i + '%';
+}
+
 module.exports = {
   lineHeight
 }

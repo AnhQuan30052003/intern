@@ -6,9 +6,8 @@
   a > p {
     @apply text-14 m-0 font-bold;
   }
-
   .item-image > img {
-    @apply w-full object-cover max-h-115 min-h-115;
-    @apply md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
+    @apply w-full object-cover max-h-115 min-h-115
+      md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
   }
 }

@@ -6,7 +6,7 @@ const minWidth = {
   200: '200px',
 }
 
-let max = 500;
+let max = 1000;
 for (let i = 0; i <= max; i++) {
   minWidth[i] = i * 2 + 'px';
 }

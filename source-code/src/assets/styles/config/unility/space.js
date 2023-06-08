@@ -1,4 +1,3 @@
-let p = 0
 let Space = {
   0: '0px',
   '0p5': '1px',
@@ -12,13 +11,13 @@ let Space = {
   '100vh': '100vh'
 }
 
+let p = 0
 let max = 1000
 for (let i = 0; i < max; i+=0.5) {
   Space[i] = i * 2 + 'px'
   p = i + 'p'
   Space[p] = i + '%'
 }
-// console.log(Space)
 
 module.exports = {
   Space

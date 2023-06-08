@@ -8,25 +8,22 @@
 .mod-testimonials {
   .btn-prev,
   .btn-next {
-    @apply absolute block p-0 cursor-pointer border-none outline-none text-30 -top-35 w-15;
-    @apply md:top-105p xl:right-none;
-    z-index: 11;
+    @apply absolute block p-0 cursor-pointer border-none outline-none text-30 -top-35 w-15 z-11
+      md:top-105p xl:right-none;
   }
   
   .btn-prev {
-    @apply right-20;
-    @apply xl:left-20;
+    @apply right-20 xl:left-20;
   }
   
   .btn-next {
-    @apply right-0;
-    @apply xl:left-40;
+    @apply right-0 xl:left-40;
   }
   
   .btn-dots {
-    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18;
-    @apply md:top-115p md:justify-end md:gap-27.5 right-6.5;
-    @apply xl:justify-start xl:pr-0 xl:right-none xl:left-13;
+    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+      md:top-115p md:justify-end md:gap-27.5 right-6.5
+      xl:justify-start xl:pr-0 xl:right-none xl:left-13;
     
     li {
       @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;

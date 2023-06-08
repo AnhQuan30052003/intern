@@ -4,8 +4,7 @@
   }
 
   p {
-    @apply font-medium text-20 md:text-18 mb-15 md:pr-100 xl:pr-0;
-    line-height: 30px;
+    @apply font-medium text-20 md:text-18 mb-15 md:pr-100 xl:pr-0 leading-30;
   }
 
   .btn-play > p {

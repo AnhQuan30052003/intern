@@ -15,6 +15,11 @@ const opacity = {
   95: '0.95',
   100: '1'
 }
+
+let max = 100;
+for (let i = 0; i <= max; i++) {
+  opacity[i] = i / 100.0;
+}
 module.exports = {
   opacity
 }
