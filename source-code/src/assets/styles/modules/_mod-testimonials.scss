@@ -8,7 +8,7 @@
 .mod-testimonials {
   .btn-prev,
   .btn-next {
-    @apply absolute block p-0 cursor-pointer border-none outline-none text-30 -top-45 w-15;
+    @apply absolute block p-0 cursor-pointer border-none outline-none text-30 -top-35 w-15;
     @apply md:top-105p xl:right-none;
     z-index: 11;
   }
@@ -24,7 +24,7 @@
   }
   
   .btn-dots {
-    @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18;
+    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18;
     @apply md:top-115p md:justify-end md:gap-27.5 right-6.5;
     @apply xl:justify-start xl:pr-0 xl:right-none xl:left-13;
     
