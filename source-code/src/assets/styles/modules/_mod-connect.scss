@@ -6,4 +6,23 @@
  h3 {
   @apply text-28 md:text-24 2xl:text-36 font-bold m-0;
  }
+
+ .images-items {
+    @apply flex justify-center items-center gap-5 w-full h-30p;
+ }
+
+ .size-img {
+   @apply w-1/4 h-full;
+ }
+
+ img {
+   @apply w-full;
+ }
+
+ .images {
+   translate: -40px;
+   @media (min-width: 768px) {
+      translate: 0px;
+   }
+ }
 }

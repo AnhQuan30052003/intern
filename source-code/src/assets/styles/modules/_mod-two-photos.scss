@@ -16,9 +16,13 @@
     @apply md:text-24 font-semibold leading-9 mb-2.5 2xl:text-36;
   }
 
+  .above-content,
+  .bellow-content {
+    @apply p-10 w-full text-base font-normal xl:w-3/5 2xl:w-1/2 xl:pl-50 xl:pt-30 2xl:pt-50;
+  }
+
   .above-image > img,
-  .bellow-image >img {
-    @apply w-full object-cover;
-    @apply md:h-210 xl:h-auto;
+  .bellow-image > img {
+    @apply w-full object-cover md:h-210 xl:h-auto;
   }
 }

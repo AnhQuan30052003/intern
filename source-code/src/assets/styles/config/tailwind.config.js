@@ -1,10 +1,9 @@
 const configs = require('./config')
 const mode = process.title === 'gulp' ? 'aot' : 'aot'
-console.log('====> System: Loading...', )
+console.log('   [System: Loading...]', )
 module.exports = {
   content: [
     './src/html/**/*.html',
-    './public/**/*.html',
     './public/**/*.html',
     './src/assets/**/*.js',
     './index.php', 
