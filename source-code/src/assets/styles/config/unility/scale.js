@@ -11,7 +11,7 @@ const Scales = {
   150: '1.5'
 }
 
-let max = 1000;
+let max = 10;
 for (let i = 0; i <= max; i+=0.5) {
   Scales[i] = i;
 }

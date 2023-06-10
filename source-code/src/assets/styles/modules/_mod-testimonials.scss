@@ -8,7 +8,7 @@
 .mod-testimonials {
   .btn-prev,
   .btn-next {
-    @apply absolute block p-0 cursor-pointer border-none outline-none text-30 -top-35 w-15 z-11
+    @apply absolute block p-0 cursor-pointer border-none outline-none text-15 -top-35 w-15 z-11
       md:top-105p xl:right-none;
   }
   
@@ -76,14 +76,14 @@
   }
 
   .title > h3 {
-    @apply font-bold text-30 m-0;
+    @apply font-bold text-15 m-0;
   }
 
   .title > a > p {
-    @apply text-14 font-bold m-0;
+    @apply text-7 font-bold m-0;
   }
 
   .items-footer > h6 {
-    @apply font-semibold text-16;
+    @apply font-semibold text-8;
   }
 }

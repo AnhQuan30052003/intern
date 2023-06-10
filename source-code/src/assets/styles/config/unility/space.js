@@ -13,7 +13,7 @@ let Space = {
 
 let p = 0
 let max = 1000
-for (let i = 0; i < max; i+=0.5) {
+for (let i = 0; i <= max; i+=0.5) {
   Space[i] = i * 2 + 'px'
   p = i + 'p'
   Space[p] = i + '%'

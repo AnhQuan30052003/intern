@@ -9,12 +9,12 @@
   }
   
   p {
-    @apply m-0 text-16 font-medium;
+    @apply m-0 text-8 font-medium;
     line-height: 21px;
   }
 
   .nav-1 > p {
-    @apply text-14 font-normal;
+    @apply text-7 font-normal;
   }
 
   .nav-1 > div > p {
@@ -28,6 +28,6 @@
   }
 
   .ABB > ul > li > p {
-    @apply font-bold text-18;
+    @apply font-bold text-9;
   }
 }

@@ -33,8 +33,9 @@ const Colors = {
     600: '#f5f8fa'
   },
   black: '#000',
-  transparent: 'transparent'
+  transparent: 'transparent',
 }
+
 module.exports = {
   Colors
 }

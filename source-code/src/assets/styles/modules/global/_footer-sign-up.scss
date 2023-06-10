@@ -1,6 +1,6 @@
 .footer-sign-up {
   .phone > p {
-    @apply text-25 font-medium;
+    @apply text-12.5 font-medium;
   }
 
   .title > p {
@@ -8,7 +8,7 @@
   }
 
   .row-footer > p {
-    @apply text-12 text-gray-500;
+    @apply text-6 text-gray-500;
   }
 
   .row-footer > p:nth-child(1) {
@@ -16,8 +16,8 @@
   }
 
   h5 {
-    @apply text-20;
-    @apply xl:text-18;
+    @apply text-10;
+    @apply xl:text-9;
   }
 
   .row-body > p {
@@ -26,7 +26,7 @@
 
   .row-header > ul > li > a > p,
   .row-body > p {
-    @apply font-semibold text-16 text-gray-300;
+    @apply font-semibold text-8 text-gray-300;
   }
 
   .row-header > ul > li:hover > a > p {

@@ -21,18 +21,18 @@
 
   h3,
   .h3 {
-    @apply font-medium text-26;
+    @apply font-medium text-13;
   }
 
   h4,
   .h4 {
-    @apply text-24 font-medium;
+    @apply text-12 font-medium;
     line-height: 140%;
   }
 
   h5,
   .h5 {
-    @apply text-h5 font-bold md:text-18 lg:text-h5;
+    @apply text-h5 font-bold md:text-9 lg:text-h5;
   }
 
   h6,
@@ -74,7 +74,7 @@
     @apply list-disc;
   }
   p {
-    @apply text-16 font-normal;
+    @apply text-8 font-normal;
   }
 }
 

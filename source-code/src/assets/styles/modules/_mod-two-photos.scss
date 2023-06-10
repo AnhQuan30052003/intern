@@ -1,11 +1,11 @@
 .mod-two-photos {
   a > p {
-    @apply text-14 text-blue-300 m-0 font-bold;
+    @apply text-7 text-blue-300 m-0 font-bold;
   }
 
   above-content > p,
   bellow-content > p {
-    @apply text-gray-300 leading-6 md:leading-7
+    @apply text-gray-300 leading-3 md:leading-3.5
   }
 
   bellow-content > p {
@@ -13,7 +13,7 @@
   }
 
   h3 {
-    @apply md:text-24 font-semibold leading-9 mb-2.5 2xl:text-36;
+    @apply md:text-12 font-semibold leading-4.5 mb-2.5 2xl:text-18;
   }
 
   .above-content,

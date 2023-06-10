@@ -28,9 +28,9 @@ const fontSize = {
   'btn': ['.875em', { lineHeight: '1.2' }],
 }
 
-let max = 100;
-for (let i = 1; i <= max; i++){
-  fontSize[i] = i + 'px';
+let max = 50;
+for (let i = 1; i <= max; i+=0.5){
+  fontSize[i] = i * 2 + 'px';
 }
 
 module.exports = {
