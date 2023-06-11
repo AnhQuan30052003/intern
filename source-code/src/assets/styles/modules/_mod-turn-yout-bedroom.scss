@@ -3,7 +3,7 @@
   .btn-prev,
   .btn-next {
     @apply absolute block p-0 cursor-pointer text-blue-300 border-none outline-none text-15 -top-45 w-15 z-11
-      xl:right-none xl:top-130 2xl:top-135;
+      xl:right-none xl:top-140 2xl:top-135;
   }
   
   .btn-prev {
@@ -17,7 +17,7 @@
   .btn-dots {
     @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
       md:justify-end md:right-45 md:gap-27.5 xl:gap-17
-      xl:justify-start xl:pr-0 xl:top-160 xl:-left-7 2xl:top-165;
+      xl:justify-start xl:pr-0 xl:top-170 xl:-left-7 2xl:top-165;
     
     li {
       @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
@@ -72,8 +72,8 @@
   }
 
   .box-image > img {
-    @apply w-full object-cover h-115
-      md:h-125 xl:h-150 2xl:h-220;
+    @apply w-full h-115 object-cover
+      md:h-125 xl:h-160 2xl:h-250;
   }
 
   a > span {
