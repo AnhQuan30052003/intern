@@ -7,9 +7,9 @@ const Index = {
   'auto': 'auto'
 }
 
-let max = 100;
+let max = 50;
 for (let i = 0; i <= max; i++) {
-  Index[i] = i;
+  Index[i] = i * 2;
 }
 
 module.exports = {

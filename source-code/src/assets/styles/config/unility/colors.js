@@ -30,10 +30,12 @@ const Colors = {
     300: '#043673',
     400: '#CDD9E3',
     500: '#4197B4',
-    600: '#f5f8fa'
+    600: '#f5f8fa',
+    700: '#357E97'
   },
   black: '#000',
   transparent: 'transparent',
+  'white-sm': '#fdfdfd',
 }
 
 module.exports = {

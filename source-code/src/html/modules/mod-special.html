@@ -1,122 +1,188 @@
 <section class="module mod-special">
-  <div class="container px-0">
-    <div class="main w-full">
-      <!-- Thanh nav thu nhat -->
-      <nav class="nav-1 flex justify-between px-10 py-3">
+  <div class="container 2xl:max-w-full">
+    <div class="main w-full h-100 bg-white-sm">
+      <div class="header-title w-full h-15 leading-12 flex items-center gap-10 justify-center bg-gray-400">
         <p>Special announcement banner at the top message here</p>
-        <div class="flex gap-5 w-60 items-center">
-          <p>See offer</p>
-          <div class="flex items-center">
+        <div class="see-off font-bold text-7 leading-9 flex gap-5 items-center">
+          <span>See offer</span>
+          <span class="">
             <img src="../../assets/images/icon-see-offer.svg" alt="">
-          </div>
+          </span>
         </div>
-      </nav>
-
-      <!-- Thanh nav chinh thu 2 -->
-      <nav class="nav-2 flex items-center relative">
-        <div class="logo h-full bg-blue-500 w-2/5 py-5 flex justify-center items-center">
-          <img class="w-30 h-20" src="../../assets/images/Logo.png" alt="">
+      </div>
+      
+      <div class="header-nav px-40 w-full h-100 flex">
+        <div class="logo w-130 h-full relative">
+          <a href="#" class="bg-blue-500 w-full h-100 absolute z-10 top-0 right-0 flex items-end justify-center pb-20">
+            <img class="w-100" src="../../assets/images/Logo.png" alt="">
+          </a>
         </div>
-        <div class="icon h-full w-3/5 flex justify-around">
-          <div class="icon-search flex items-center gap-3">
-            <div>
-              <img src="../../assets/images/icon-search.svg" alt="">
-            </div>
-            <div class="text-8 font-medium hidden xl:block">
-              <p>Search</p>
+  
+        <div class="nav w-90p h-full pl-40">
+          <div class="nav-above h-1/2 font-medium leading-11.5 flex items-center justify-between">
+            <ul class="left flex gap-20 m-0 p-0">
+              <li class="text-blue-700 m-0 p-0">Shop Ergomotion</li>
+              <li class="m-0 p-0">Private Label</li>
+              <li id="our-brands" class="flex gap-5 m-0 p-0 relative">
+                Our brands
+                <img class="" src="../../assets/images/icon-down.svg" alt="">
+                <div class="content-hidden absolute hidden flex-col z-10 top-20 -right-15 w-108 h-150 px-30 py-30 bg-white">
+                  <ul class="m-0 p-0">
+                    <li class="mb-15 p-0">Dawn House</li>
+                    <li class="mb-15 p-0">ErgoSportive</li>
+                    <li class="m-0 p-0">Quest</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="right">
+              <ul class="icon flex gap-20 m-0 p-0">
+                <li class="flex gap-5 m-0 p-0">
+                  <div class="icon">
+                    <img src="../../assets/images/icon-stores.svg" alt="">
+                  </div>
+                  <div class="title">
+                    <span>Stores</span>
+                  </div>
+                </li>
+
+                <li id="icon-search" class="flex gap-5 m-0 p-0">
+                  <div class="icon">
+                    <img src="../../assets/images/icon-search.svg" alt="">
+                  </div>
+                  <div class="title">
+                    <span>Search</span>
+                  </div>
+                </li>
+
+                <li class="flex gap-5 m-0 p-0">
+                  <div class="icon">
+                    <img src="../../assets/images/icon-account.svg" alt="">
+                  </div>
+                  <div class="title">
+                    <span>My account</span>
+                  </div>
+                </li>
+
+                <li class="flex gap-5 m-0 p-0">
+                  <div class="icon">
+                    <img src="../../assets/images/icon-cart.svg" alt="">
+                  </div>
+                  <div class="title">
+                    <span>Cart(0)</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="search-frame relative hidden -right-15 h-30 w-250">
+                <div class="search-box flex rounded p-5 h-full w-full">
+                  <input class="outline-none w-full py-5 pl-5"
+                    type="text" placeholder="Search">
+                  <div class="h-full flex justify-center items-center w-25 cursor-pointer">
+                    <img src="../../assets/images/icon-search.svg" alt="">
+                  </div>
+                </div>
+                <div id="close-search-box" class="h-full flex justify-center items-center w-25 cursor-pointer">
+                  <img src="../../assets/images/icon-x.svg" alt="">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="icon-stores flex items-center gap-3">
-            <div>
-              <img src="../../assets/images/icon-stores.svg" alt="">
-            </div>
-            <div class="text-8 font-medium hidden xl:block">
-              <p>Stores</p>
-            </div>
-          </div>
-          <div class="icon-my-account flex items-center gap-3">
-            <div>
-              <img src="../../assets/images/icon-account.svg" alt="">
-            </div>
-            <div class="text-8 font-medium">
-              <p>My account</p>
-            </div>
-          </div>
-          <div class="icon-cart flex items-center gap-3">
-            <div>
-              <img src="../../assets/images/icon-cart.svg" alt="">
-            </div>
-            <div class="text-8 font-medium hidden xl:block">
-              <p>Cart(0)</p>
-            </div>
-          </div>
-          <div class="menu h-full flex items-center justify-content">
-            <img src="../../assets/images/icon-menu.svg" alt="">
-          </div>
+  
+          <div class="nav-bellow h-1/2 flex items-start justify-between">
+            <ul class="left flex gap-20 font-bold -text-9 leading-13 pl-0">
+              <li class="relative h-25">
+                Adjustable bases
+                <div class="content-hidden hidden absolute z-10 top-25 -left-40 w-494 h-232 px-40 bg-white" sytle="border: solid 1px">
+                  <div class="content w-1/2 py-40">
+                    <p>Quest Adjustable Bases</p>
+                    <ul class="font-medim text-8 my-20 flex flex-col flex-wrap h-79 pl-0">
+                      <li class="w-1/2 h-1/3 m-0">Quest 1.0</li>
+                      <li class="w-1/2 h-1/3 m-0">Quest 2.0</li>
+                      <li class="w-1/2 h-1/3 m-0">Quest 2.5</li>
+                      <li class="w-1/2 h-1/3 m-0">Quest 4.0</li>
+                      <li class="w-1/2 h-1/3 m-0">Quest Connect</li>
+                      <li class="w-1/2 h-1/3 m-0">Quest Zone</li>
+                    </ul>
+                    <button class="text-7 font-bold btn-primary px-10 py-5 rounded-sm bg-blue-300 -mt-10">
+                      Compare Quest bases
+                    </button>
+                  </div>
+                  <div class="image w-1/2">
+                    <img src="../../assets/images/photo-Adjustable-bases.png" alt="">
+                  </div>
+                </div>
+              </li>
+
+              <li class="relative h-25">
+                Base Accessories
+                <div class="content-hidden hidden absolute z-10 top-25 -left-60 w-494 h-232 px-40 bg-white">
+                  <div class="content w-1/2 py-40">
+                    <ul class="font-medium text-8 h-79 pl-0 m-0 p-0">
+                      <li class="mb-20">Universal Adjustable Base Accessories</li>
+                      <li class="mb-10 p-0">Replacement Legs</li>
+                      <li class="mb-10 p-0">Casters & Extensions</li>
+                      <li class="mb-10 p-0">Headboard Brackets</li>
+                    </ul>
+                  </div>
+                  <div class="image w-1/2">
+                    <img src="../../assets/images/photo-Base-Accessories.png" alt="">
+                  </div>
+                </div>
+              </li>
+
+              <li class="relative h-25">
+                Bedding & pillows
+                <div class="content-hidden hidden absolute z-10 top-25 -left-60 w-494 h-232 px-40 bg-white">
+                  <div class="content w-1/2 py-40">
+                    <ul class="font-medium text-8 h-79 pl-0 m-0 p-0">
+                      <li class="m-0 p-0 mb-15">Sheets</li>
+                      <li class="m-0 p-0 mb-15">Duvet</li>
+                      <li class="m-0 p-0 mb-15">Weighted blankets</li>
+                      <li class="m-0 p-0 mb-15">Matress  protectors</li>
+                      <li class="m-0 p-0 mb-15">Pillows</li>
+                      <li class="m-0 p-0 mb-15">Pillows</li>
+                    </ul>
+                  </div>
+                  <div class="image w-1/2">
+                    <img src="../../assets/images/photo-Bedding-&-pillows.png" alt="">
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="right flex gap-20 font-medium text-8">
+              <li class="relative h-25">
+                Learn
+                <ul class="content-hidden hidden flex-col flex-wrap absolute z-10 top-25 -right-15 w-285 h-165 px-40 py-30 bg-white">
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Adjustable base features</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Sustainability</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Smart techonology</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Ergomotion</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Adjustable base benefits</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Health benefits</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Sleep benefits</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Lifestyle benefits</li>
+                </ul>
+              </li>
+              <li>Reviews</li>
+              <li>Our story</li>
+              <li class="relative h-25">
+                Support
+                <ul class="content-hidden hidden flex-col flex-wrap absolute z-10 top-25 right-0 w-285 h-165 px-40 py-30 bg-white">
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Contact customer service</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Track your order</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Returns</li>
+                  <li class="flex items-center m-0 p-0 w-1/2 h-1/4">Warranty</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Setup videos</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">Replacement parts</li>
+                  <li class="flex items-center m-0 p-0 pl-15 w-1/2 h-1/4">FAQ/li>
+                </ul>
+              </li>
+            </ul>
+          </div>k
         </div>
-      </nav>
-
-      <!-- Thanh nav thu 3 -->
-      <nav class="nav-3 px-20 pt-50 absolute bg-white h-100vh w-full">
-        <div class="ABB">
-          <ul>
-            <li class="flex justify-between items-center">
-              <p>Adjustable bases</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/click-item-right.svg" alt="">
-              </div>
-            </li>
-
-            <li class="flex justify-between items-center">
-              <p>Base Accessories</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/click-item-right.svg" alt="">
-              </div>
-            </li>
-
-            <li class="flex justify-between items-center">
-              <p>Bedding & pillows</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/click-item-right.svg" alt="">
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="LROS my-20">
-          <ul>
-            <li class="flex justify-between items-center">
-              <p>Learn</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/click-item-right.svg" alt="">
-              </div>
-            </li>
-          
-            <li><p>Reviews</p></li>
-            <li><p>Our story</p></li>
-          
-            <li class="flex justify-between items-center">
-              <p>Support</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/click-item-right.svg" alt="">
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="SWO pl-10 bg-blue-600 py-3">
-          <ul>
-            <li><p>Shop Ergomotion</p></li>
-            <li><p>Wholesale</p></li>
-            <li class="flex items-center gap-3">
-              <p>Our brands</p>
-              <div class="flex items-center">
-                <img src="../../assets/images/icon-down.svg" alt="">
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
     </div>
   </div>
 </section>

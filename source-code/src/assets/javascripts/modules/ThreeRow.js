@@ -29,5 +29,3 @@ export default class ThreeRow {
   }
 }
 new ThreeRow().init()
-
-console.log('Run file ThreeRow.js');

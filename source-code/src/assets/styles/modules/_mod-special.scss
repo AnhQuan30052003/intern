@@ -1,33 +1,38 @@
 .mod-special {
-  ul {
-    list-style: none;
+  li {
+    @apply cursor-pointer;
+    &:hover {
+      @apply text-blue-700;
+    }
+  }
+  
+  .content-hidden {
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+  }
+
+  .left > li:hover > .content-hidden,
+  .right > li:hover > .content-hidden {
+    @apply flex;
+  }
+  
+  p,
+  span {
     @apply m-0 p-0;
   }
 
-  .SWO > ul > li {
-    @apply my-5;
+  .image > img {
+    @apply w-full h-full;
+  }
+
+  .search-box {
+    border: solid 1px #CDD9E3;
+  }
+
+  #our-brands > img {
+    transition: 0.3s;
   }
   
-  p {
-    @apply m-0 text-8 font-medium;
-    line-height: 21px;
-  }
-
-  .nav-1 > p {
-    @apply text-7 font-normal;
-  }
-
-  .nav-1 > div > p {
-    @apply font-bold text-blue-300;
-  }
-
-  .icon-my-account {
-    position: absolute;
-    top: 100px;
-    left: 40px;
-  }
-
-  .ABB > ul > li > p {
-    @apply font-bold text-9;
+  #our-brands:hover > img {
+    transform: rotate(180deg);
   }
 }
