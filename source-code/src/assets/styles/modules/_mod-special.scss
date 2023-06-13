@@ -8,6 +8,7 @@
   
   .content-hidden {
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
+    transition: 1s;
   }
 
   .left > li:hover > .content-hidden,
@@ -29,7 +30,7 @@
   }
 
   #our-brands > img {
-    transition: 0.3s;
+    transition: 0.25s;
   }
   
   #our-brands:hover > img {
