@@ -4,10 +4,10 @@ export default class SliderDemo {
   }
   init () {
     if (this.$this.length) {
-      this.addSlick()
+      this.loadSlider()
     }
   }
-  addSlick () {
+  loadSlider () {
     this.$this.find('.slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,

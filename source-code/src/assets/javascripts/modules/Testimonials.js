@@ -8,7 +8,7 @@ export default class Testimonials {
     }
   }
   addSlick () {
-    this.$this.find('.slider').slick({
+    this.$this.find('.slider').slick({      
       slidesToShow: 3,
       dots: true,
       arrows: true,
