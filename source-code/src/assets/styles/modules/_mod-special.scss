@@ -36,4 +36,32 @@
   #our-brands:hover > img {
     transform: rotate(180deg);
   }
+
+  .container > .main > .header-nav {
+    .nav {
+      .nav-above {
+        .left {
+          li {
+            font-size: 20px;
+          }
+        }
+        .right {
+          li {
+            .title {
+              @apply hidden 2xl:block;
+            }
+          }
+        }
+      }
+
+      .nav-bellow {
+        .right {
+          li {
+            font-size: 21px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
 }
