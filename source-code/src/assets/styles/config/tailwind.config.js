@@ -138,13 +138,17 @@ module.exports = {
           paddingLeft: '26px',
           paddingRight: '26px', 
           minWidth: '320px',
+          '@screen md': {
+            paddingLeft: '48px', 
+            paddingRight: '48px'
+          },
           '@screen lg': {
             maxWidth: '1000px',
             paddingLeft: '48px', 
             paddingRight: '48px'
           },
           '@screen xl': { 
-            maxWidth: '1200px',
+            maxWidth: '1136px',
             paddingLeft: '0px',
             paddingRight: '0px'
           },
