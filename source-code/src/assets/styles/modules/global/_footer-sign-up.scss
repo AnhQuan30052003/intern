@@ -1,38 +1,14 @@
 .footer-sign-up {
-  .phone > p {
-    @apply text-12.5 font-medium;
-  }
-
-  .title > p {
-    @apply font-semibold;
-  }
-
-  .row-footer > p {
-    @apply text-6 text-gray-500;
-  }
-
-  .row-footer > p:nth-child(1) {
-    @apply mb-10;
-  }
-
   h5 {
-    @apply text-10;
-    @apply xl:text-9;
+    @apply text-10 xl:text-9;
   }
-
-  .row-body > p {
-    @apply text-gray-500;
-  }
-
   .row-header > ul > li > a > p,
   .row-body > p {
     @apply font-semibold text-8 text-gray-300;
   }
-
   .row-header > ul > li:hover > a > p {
     @apply underline text-blue-300;
   }
-
   .shop,
   .learn,
   .support,
@@ -43,6 +19,41 @@
    ul {
     list-style: none;
    }
+
+  .container {
+    .main {
+      .box-input {
+        .title {
+          p {
+            @apply font-semibold;
+          }
+        }
+        .contact {
+          .phone {
+            p {
+              @apply text-12.5 font-medium m-0;
+            }
+          }
+        }
+      }
+      .infor {
+        .row-body {
+          p {
+            @apply text-gray-500;
+          }
+        }
+        .row-footer {
+          p {
+            @apply text-6 text-gray-500;
+          }
+
+          p:nth-child(1) {
+            @apply mb-10;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1280px) {
