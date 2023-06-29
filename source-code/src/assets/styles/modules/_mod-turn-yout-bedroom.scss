@@ -17,7 +17,7 @@
   .btn-dots {
     @apply absolute -top-15 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
       md:justify-end md:right-45 md:gap-27.5 xl:gap-17
-      xl:justify-start xl:pr-0 xl:top-170 xl:-left-7 2xl:top-165;
+      xl:justify-start xl:pr-0 xl:top-175 xl:-left-7 2xl:top-170;
     
     li {
       @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
@@ -72,8 +72,7 @@
   }
 
   .box-image > img {
-    @apply w-full h-115 object-cover
-      md:h-125 xl:h-160 2xl:h-250;
+    @apply w-full h-115 object-cover md:h-125 xl:h-160 2xl:h-250;
   }
 
   a > span {
