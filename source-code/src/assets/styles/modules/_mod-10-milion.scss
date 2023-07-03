@@ -1,18 +1,25 @@
 .mod-10-milion {
-  p {
-    @apply font-medium text-9;
-  }
-
-  h2 {
-    @apply m-0 2xl:font-bold 2xl:text-24;
-  }
-
-  .sysm {
-    @apply flex flex-col gap-10 items-center w-full md:w-1/2;
-  }
-
-  .sysm-above,
-  .sysm-bellow {
-    @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
+  .container {
+    .main {
+      .content {
+        h2 {
+          @apply m-0 2xl:font-bold text-15 md:text-16 xl:text-20 2xl:text-28;
+        }        
+      }
+      .four-symboilize {
+        .sysm-above,
+        .sysm-bellow {
+          @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
+          .sysm {
+            @apply flex flex-col gap-10 items-center w-full md:w-1/2;
+            .sym-content {
+              p {
+                @apply font-medium text-9;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
