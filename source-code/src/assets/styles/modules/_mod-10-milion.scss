@@ -3,20 +3,30 @@
     .main {
       .content {
         h2 {
-          @apply m-0 2xl:font-bold text-15 md:text-16 xl:text-20 2xl:text-28;
+          @apply m-0 leading-21 md:leading-24;
         }        
       }
       .four-symboilize {
         .sysm-above,
         .sysm-bellow {
-          @apply flex flex-col gap-20 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full;
+          @apply flex flex-col gap-19 md:flex-row md:gap-0 px-30 md:px-30 xl:px-0 w-full xl:w-45p 2xl:w-1/2;
           .sysm {
-            @apply flex flex-col gap-10 items-center w-full md:w-1/2;
+            @apply flex flex-col gap-18 md:gap-17 xl:gap-20 items-center w-full md:w-47p xl:w-50p;
+            .sym-icon {
+              @apply h-30 flex items-end pb-3.5 md:items-center md:pb-0;
+            }
             .sym-content {
+              @apply text-center px-17 md:px-5 leading-15;
               p {
                 @apply font-medium text-9;
               }
             }
+          }
+        }
+
+        .sysm-above {
+          .sysm {
+            @apply md:gap-9 xl:gap-20;
           }
         }
       }

@@ -1,5 +1,4 @@
 .header-special {
-  font-family: 'Plus Jakarta Sans';
   @apply fixed top-0 left-0 right-0 bg-white z-9999;
   // setup for html
   li {
@@ -140,10 +139,10 @@
   }
 }
 .open {
-  animation: open 0.25s linear forwards;
+  animation: open 0.3s linear forwards;
 }
 .close {
-  animation: close 0.25s linear forwards;
+  animation: close 0.3s linear forwards;
 }
 .now {
   animation: open 0.0s linear forwards;

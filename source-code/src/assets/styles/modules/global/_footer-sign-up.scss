@@ -1,11 +1,11 @@
 .footer-sign-up {
   .title h5 {
-    @apply text-10 xl:text-9;
+    @apply text-11.5 mb-14 xl:text-9;
   }
 
   .row-header > ul > li > a > p,
   .row-body > p {
-    @apply font-semibold text-8 text-gray-300;
+    @apply font-semibold text-9 text-gray-300;
   }
 
   .row-header > ul > li:hover > a > p {
@@ -16,8 +16,8 @@
   .learn,
   .support,
   .company {
-    @apply w-full p-20 pr-0;
-    @apply md:w-1/2 xl:w-1/4 xl:pt-15 md:pl-30 xl:pl-20;
+    @apply w-full m-0 p-0 my-10
+      md:w-1/2;
   }
 
   ul {
@@ -29,14 +29,19 @@
       .box-input {
         .title {
           p {
-            @apply font-semibold;
+            @apply font-semibold text-9;
           }
         }
 
         .contact {
           .phone {
             p {
-              @apply text-12.5 font-medium m-0;
+              @apply text-15 md:text-12 font-medium m-0;
+            }
+          }
+          .icons {
+            a {
+              @apply text-white text-11;
             }
           }
         }

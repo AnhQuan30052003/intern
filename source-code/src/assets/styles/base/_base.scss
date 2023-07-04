@@ -1,6 +1,9 @@
 @layer base {
+  .module {
+    font-family: 'Plus Jakarta Sans';
+  }
   body {
-    @apply text-base text-black xl:text-lg font-sans;
+    @apply text-base text-black xl:text-lg;
   }
   html {
     @apply m-0;
@@ -45,23 +48,23 @@
     @apply text-sm;
   }
 
-  // h1,
-  // h2,
-  // h3,
-  // h4,
-  // h5,
-  // h6{
-  //   @apply mb-8;
-  // }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    @apply mb-8;
+  }
 
-  // p,
-  // li,
-  // ol,
-  // ul,
-  // blockquote,
-  // figure{
-  //   margin: 0 0 15px;
-  // }
+  p,
+  li,
+  ol,
+  ul,
+  blockquote,
+  figure{
+    margin: 0 0 15px;
+  }
 
   ol,
   ul{

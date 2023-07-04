@@ -1,13 +1,20 @@
 .mod-adjust {
-  h1 {
-    @apply text-18 md:text-21 2xl:text-36;
+  .container {
+    .main {
+      .frame {
+        .box-content {
+          h1 {
+            @apply text-hush-black;
+          }
+          p {
+            @apply font-medium text-10 md:text-9 leading-80p mb-20 xl:mb-23 text-dark-grey;
+          }
+        }
+      }
+    }
   }
 
-  p {
-    @apply font-medium text-10 md:text-9 mb-15 md:pr-100 xl:pr-0 leading-15;
-  }
-
-  .btn-play > span {
+  .btn-play span {
     @apply font-bold text-7 m-0;
   }
 }

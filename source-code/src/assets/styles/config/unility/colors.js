@@ -33,9 +33,14 @@ const Colors = {
     600: '#f5f8fa',
     700: '#357E97'
   },
+
+
+  // create color follow name
   black: '#000',
+  'hush-black': '#1D2020',
   transparent: 'transparent',
   'white-sm': '#fdfdfd',
+  'dark-grey': '#646464',
 }
 
 module.exports = {
