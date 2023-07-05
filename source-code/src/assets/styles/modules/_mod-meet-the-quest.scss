@@ -1,13 +1,30 @@
 .mod-meet-the-quest {
-  .title > h3 {
-    @apply text-13 font-bold m-0;
-  }
-
-  a > p {
-    @apply text-7 m-0 font-bold;
-  }
-  .item-image > img {
-    @apply w-full object-cover max-h-115 min-h-115
-      md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
+  .container {
+    .title h3 {
+      @apply text-13 font-bold m-0;
+      a p {
+        @apply text-7 m-0 font-bold;
+      }
+    }
+    .box {
+      .box-above,
+      .box-bellow {
+        .box-item {
+          .item-image {
+            @apply w-full max-h-115 min-h-115 overflow-hidden
+              md:min-h-125 md:max-h-125 xl:max-h-225 xl:min-h-225;
+            img {
+              @apply w-full object-cover;
+              transition: 0.25s;
+            }
+            &:hover {
+              img {
+                scale: 1.1;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

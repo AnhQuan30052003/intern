@@ -64,35 +64,45 @@
 
   // For file code
   h3 {
-    @apply font-sans font-medium text-13
-      xl:text-12 2xl:text-18;
-    line-height: 140%;
+    @apply font-sans font-medium text-13 leading-70p
+    xl:text-12 2xl:text-18;
   }
-
   p {
     @apply text-gray-300 text-8 font-normal leading-12;
   }
 
-  .box-image > img {
-    @apply w-full h-115 object-cover md:h-125 xl:h-160 2xl:h-250;
-  }
-
-  a > span {
-    @apply text-blue-300 font-bold text-7;
-  }
-
-  a {
-    @apply flex gap-4;
-    &:hover {
-      @apply text-primary-200;
+  .container {
+    .main {
+      .slider {
+        .box {
+          @apply md:mr-7.5 xl:w-300 2xl:w-430;
+          .box-image {
+            @apply w-full h-115 object-cover md:h-125 xl:h-160 2xl:h-250 overflow-hidden;
+            img {
+              @apply w-full h-full object-cover;
+              transition: 0.25s;
+            }
+            &:hover {
+              img {
+                scale: 1.1;
+              }
+            }
+          }
+          .box-content {
+            a {
+              @apply flex gap-4;
+              &:hover {
+                span {
+                  @apply text-primary-300;
+                }
+              }
+              span {
+                @apply text-blue-300 font-bold text-7;
+              }
+            }
+          }
+        }
+      }
     }
-  }
-   
-  a > img {
-    @apply w-10 h-7 self-center;
-  }
-
-  .box {
-    @apply md:mr-7.5 xl:w-300 2xl:w-430;
   }
 }
