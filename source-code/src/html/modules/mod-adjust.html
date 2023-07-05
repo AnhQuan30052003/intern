@@ -2,12 +2,11 @@
   <div class="container p-0 max-w-full">
     <div class="main w-full xl:relative -mt-16 xl:mt-0">
       <div class="banner xl:relative">
-        <picture class="image w-full">
-          <source media="(min-width:1440px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-desktop-2.jpg">
-          <source media="(min-width:1200px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-desktop-1.jpg">
-          <source media="(min-width:768px)" srcset="{{imagesBase64}}" data-srcset="../../assets/images/adjust-tablet.jpg">
-          <img class="lazy w-full 2xl:h-420 object-cover" src="{{imagesBase64}}" data-src="../../assets/images/adjust-mobile.jpg" alt="">
-        </picture>
+        <img class="w-full md:hidden object-cover" src="../../assets/images/adjust-mobile.jpg" alt="">
+        <img class="w-full hidden md:block xl:hidden object-cover" src="../../assets/images/adjust-tablet.jpg" alt="">
+        <img class="w-full hidden xl:block 2xl:hidden object-cover" src="../../assets/images/adjust-desktop-1.jpg" alt="">
+        <img class="w-full hidden 2xl:inline-block 2xl:h-420 object-cover" src="../../assets/images/adjust-desktop-2.jpg" alt="">
+
         <button class="btn-play absolute hidden 2xl:flex bottom-12.5 right-12.5 cursor-pointer items-center gap-5">
           <span class="flex items-center">
             <i class="text-10 fa-sharp fa-solid fa-circle-play" style="color: #4197B4;"></i>
