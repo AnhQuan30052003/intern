@@ -1,9 +1,11 @@
 .mod-meet-the-quest {
+  a p {
+    @apply text-7 mb-0 font-bold;
+  }
   .container {
-    .title h3 {
-      @apply text-13 font-bold m-0;
-      a p {
-        @apply text-7 m-0 font-bold;
+    .title {
+      h3 {
+        @apply text-13 font-bold m-0;
       }
     }
     .box {
