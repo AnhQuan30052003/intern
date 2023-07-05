@@ -4,10 +4,10 @@ export default class TurnYourBedroom {
   }
   init () {
     if (this.$this.length) {
-      this.addSlick()
+      this.loadSlider()
     }
   }
-  addSlick () {
+  loadSlider () {
     this.$this.find('.slider').slick({
       dots: true,
       arrows: true,
