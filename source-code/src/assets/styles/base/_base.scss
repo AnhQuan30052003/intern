@@ -63,7 +63,7 @@
   ul,
   blockquote,
   figure{
-    margin: 0 0 15px;
+    @apply mb-7.5;
   }
 
   ol,
@@ -76,7 +76,7 @@
   }
 
   ul{
-    @apply list-disc;
+    list-style: none;
   }
 }
 

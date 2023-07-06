@@ -9,6 +9,7 @@
   }
   
   .content-hidden {
+    @apply text-black;
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.05);
     transition: 1s;
     .image > img {
@@ -128,32 +129,14 @@
 
 // animation for menu
 .active-menu {
-  .icon-bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  .icon-bar2 {
-    opacity: 0;
-  }
-  .icon-bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-}
-.open {
-  animation: open 0.3s linear forwards;
-}
-.close {
-  animation: close 0.3s linear forwards;
-}
-.now {
-  animation: open 0.0s linear forwards;
+  .icon-bar1 { transform: translate(0, 11px) rotate(-45deg); }
+  .icon-bar2 { opacity: 0; }
+  .icon-bar3 { transform: translate(0, -11px) rotate(45deg); }
 }
 
-@keyframes open {
-  0% {left: 100%;}
-  100% {left: 0;}
-}
+.open  { animation: open 0.3s linear forwards; }
+.close { animation: close 0.3s linear forwards; }
+.now   { animation: open 0.0s linear forwards; }
 
-@keyframes close {
-  0% {left: 0;}
-  100% {left: 100%;}
-}
+@keyframes open { 0% {left: 100%;} 100% {left: 0;} }
+@keyframes close { 0% {left: 0;} 100% {left: 100%;} }
