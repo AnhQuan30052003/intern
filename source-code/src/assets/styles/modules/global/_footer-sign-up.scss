@@ -10,7 +10,7 @@
   }
 
   .row-header > ul > li:hover > a > p {
-    @apply underline text-blue-300;
+    @apply text-blue-300;
   }
 
   .shop,
@@ -29,10 +29,6 @@
   .learn,
   .support {
     @apply xl:w-28p;
-  }
-
-  ul {
-    list-style: none;
   }
 
   .container {
@@ -56,6 +52,9 @@
           .phone {
             p {
               @apply text-15 md:text-12 font-medium m-0;
+              &:hover {
+                @apply underline;
+              }
             }
           }
           .icons {
@@ -76,16 +75,19 @@
         }
         .row-body {
           p {
-            @apply text-gray-500;
+            @apply text-gray-500 cursor-pointer;
+            &:hover {
+              @apply text-blue-300;
+            }
           }
           p:nth-child(1) {
-            @apply md:mr-11.5;
+            @apply md:mr-11.5 xl:mr-23;
           }
           p:nth-child(2) {
-            @apply md:mr-32.5;
+            @apply md:mr-32.5 xl:mr-40;
           }
           p:nth-child(3) {
-            @apply md:mr-40;
+            @apply md:mr-40 xl:mr-60;
           }
         }
 
