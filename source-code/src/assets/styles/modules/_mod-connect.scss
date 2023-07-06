@@ -15,12 +15,14 @@
            @apply flex justify-center items-center gap-5 w-full h-30p;
            .size-img {
              @apply w-1/4 h-full;
-             img {
-               @apply w-full;
-               &:hover {
-                opacity: 0.5;
-               }
-             }
+             a {
+              img {
+                @apply w-full;
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+            }
            }
         }
       }

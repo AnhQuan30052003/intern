@@ -36,7 +36,7 @@
       .box-input {
         .title {
           p {
-            @apply font-semibold text-9;
+            @apply font-semibold text-9 2xl:text-12;
           }
         }
         .input {
@@ -50,8 +50,8 @@
 
         .contact {
           .phone {
-            p {
-              @apply text-15 md:text-12 font-medium m-0;
+            h4 {
+              @apply m-0 text-gray-200;
               &:hover {
                 @apply underline;
               }
@@ -75,7 +75,7 @@
         }
         .row-body {
           p {
-            @apply text-gray-500 cursor-pointer;
+            @apply cursor-pointer;
             &:hover {
               @apply text-blue-300;
             }
@@ -93,7 +93,7 @@
 
         .row-footer {
           p {
-            @apply text-8 text-gray-500;
+            @apply text-8 text-gray-300;
           }
 
           p:nth-child(1) {

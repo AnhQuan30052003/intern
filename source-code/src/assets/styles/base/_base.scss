@@ -119,5 +119,5 @@ table{
 }
 
 input::placeholder {
-  color: #ccc;
+  @apply text-dark-grey;
 }
