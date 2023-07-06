@@ -1,29 +1,17 @@
 .mod-adjust {
-  .container {
-    .main {
-      .banner {
-        .btn-play {
-          span {
-            @apply font-bold text-7 m-0;
-          }
-          span:nth-child(2) {
-            transition: 0.25s;
-            &:hover {
-              @apply text-primary-100 font-bold;
-            }
-          }
-        }
-      }
-      .frame {
-        .box-content {
-          h1 {
-            @apply text-hush-black;
-          }
-          p {
-            @apply font-medium text-10 md:text-9 leading-80p mb-20 xl:mb-23 text-dark-grey;
-          }
-        }
-      }
+  .banner .btn-play span {
+    @apply font-bold text-7 m-0;
+  }
+  .banner .btn-play span:nth-child(2) {
+    transition: 0.25s;
+    &:hover {
+      @apply text-primary-100 font-bold;
     }
+  }
+  .frame .box-content h1 {
+    @apply text-hush-black;
+  }
+  .frame .box-content p {
+    @apply font-medium text-10 md:text-9 leading-80p mb-20 xl:mb-23 text-dark-grey;
   }
 }

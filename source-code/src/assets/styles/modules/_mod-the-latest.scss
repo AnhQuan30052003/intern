@@ -1,38 +1,24 @@
 .mod-the-latest {
-  .container {
-    .main {
-      .title {
-        h3 {
-          @apply m-0;
-        }
-        a > p {
-          @apply font-bold text-7 m-0;
-        }
-      }
-      .box {
-        .item {
-          .item-image {
-            @apply w-full h-115 md:h-125 xl:h-150 overflow-hidden;
-            img {
-              @apply w-full h-full object-cover;
-              transition: 0.25s;
-            }
-            &:hover {
-              img {
-                scale: 1.1;
-              }
-            }
-          }
-          .item-content {
-            h5 {
-              @apply text-10;
-            }
-            p {
-              @apply text-8 text-gray-300;
-            }
-          }
-        }
-      }
+  .title h3 {
+    @apply m-0;
+  }
+  .title a p {
+    @apply font-bold text-7 m-0;
+  }
+  .item .item-image {
+    @apply w-full h-115 md:h-125 xl:h-150 overflow-hidden;
+    img {
+      @apply w-full h-full object-cover;
+      transition: 0.25s;
     }
+    &:hover img {
+      scale: 1.1;
+    }
+  }
+  .item .item-content h5 {
+    @apply text-10;
+  }
+  .item .item-content p {
+    @apply text-8 text-gray-300;
   }
 }

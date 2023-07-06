@@ -11,16 +11,16 @@
   }
   
   .btn-prev {
-    @apply right-20 xl:left-10;
+    @apply right-36 md:right-20 xl:left-10;
   }
   
   .btn-next {
-    @apply right-0 xl:left-30;
+    @apply right-16 md:right-0 xl:left-30;
   }
   
   .btn-dots {
-    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
-      md:top-115p md:justify-end md:gap-27.5 right-6.5
+    @apply absolute top-0 w-full p-0 pr-20 text-center list-none flex justify-center gap-18
+      md:top-115p md:justify-end md:gap-27.5 right-6.5 md:pr-35
       xl:justify-start xl:pr-0 xl:right-none xl:-left-1;
     
     li {
@@ -82,15 +82,15 @@
     @apply w-10 h-10;
   }
 
-  .title > h3 {
+  .title h3 {
     @apply font-bold text-15 m-0;
   }
 
-  .title > a > p {
+  .title a p {
     @apply text-7 font-bold m-0;
   }
 
-  .items-footer > h6 {
+  .items-footer h6 {
     @apply font-semibold text-8;
   }
 }
