@@ -1,84 +1,66 @@
 @charset 'UTF-8';
-// stylelint-disable
 
-/* Icons */
-
-/* Arrows */
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 50%;
-  display: block;
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  transform: translate(0, -50%);
-  z-index: 11;
-}
-
-.slick-prev {
-  left: -25px;
-}
-
-.slick-next {
-  right: -25px;
-}
-
-.slick-dots {
-  position: absolute;
-  // bottom: -25px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  list-style: none;
-
-  li {
-    position: relative;
-    display: inline-block;
-    padding: 0;
-    // margin: 0 8px;
-    margin-bottom: 0;
-    cursor: pointer;
-
-    &::before {
-      display: none;
+.mod-[className] {
+  .btn-prev,
+  .btn-next {
+    @apply absolute block p-0 cursor-pointer border-none outline-none text-15 -top-35 w-15
+      md:top-100p xl:right-none;
+    &:hover {
+      scale: 1.3;
     }
-
-    button {
-      cursor: pointer;
-      border-radius: 50%;
-      text-indent: -9999px;
-      @apply relative w-10 h-10 block;
-
-      &::after {
-        content: "";
-        @apply absolute w-5 h-5 top-0 left-0 block bg-primary-100;
-        transition: 0.3s;
-        // transform: translateX(50%) translateY(50%);
+  }
+  
+  .btn-prev {
+    @apply right-20 xl:left-10;
+  }
+  
+  .btn-next {
+    @apply right-0 xl:left-30;
+  }
+  
+  .btn-dots {
+    @apply absolute top-0 w-full p-0 pr-35 text-center list-none flex justify-center gap-18
+      md:top-115p md:justify-end md:gap-27.5 right-6.5
+      xl:justify-start xl:pr-0 xl:right-none xl:-left-1;
+    
+    li {
+      @apply cursor-pointer mb-0 p-0 left-0 top-0 relative;
+      transform: translate(-50%, -50%);
+      
+      &::before {
+        @apply hidden;
       }
-    }
-
-    &:hover,
-    &.slick-active {
+      
       button {
+        border-radius: 50%;
+        text-indent: -9999px;
+        @apply relative w-10 h-10 block cursor-pointer;
+        
         &::after {
-          @apply bg-primary-200;
+          content: "";
+          @apply absolute top-0 left-0 block rounded-full bg-gray-100 w-27 md:w-35 h-1;
+          transition: 0.3s;
+          transform: translateX(50%);
         }
-
+      }
+      
+      &:hover,
+      &.slick-active {
+        button {
+          &::after {
+            @apply bg-blue-200 h-1.5 -top-0.5;
+          }
+        }
       }
     }
   }
-}
-
-.slider,
-.slider-lazy {
-  &:not(.slick-initialized) {
-    .slider-item:not(:first-child) {
-      display: none;
+  
+  .slider,
+  .slider-lazy {
+    &:not(.slick-initialized) {
+      .slider-item:not(:first-child) {
+        @apply hidden;
+      }
     }
   }
 }
