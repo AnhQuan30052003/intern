@@ -1,4 +1,7 @@
 .mod-connect {
+  .container {
+    @apply px-0 max-w-full;
+  }
   .content h3 {
     @apply text-14 md:text-12 2xl:text-18 font-bold m-0;
   }

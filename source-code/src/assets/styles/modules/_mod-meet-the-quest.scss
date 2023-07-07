@@ -1,4 +1,7 @@
 .mod-meet-the-quest {
+  .container {
+    @apply py-20 2xl:px-40;
+  }
   a p {
     @apply text-7 mb-0 font-bold;
   }

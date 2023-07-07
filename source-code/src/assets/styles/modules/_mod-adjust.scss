@@ -1,4 +1,7 @@
 .mod-adjust {
+  .container {
+    @apply p-0 max-w-full;
+  }
   .banner .btn-play span {
     @apply font-bold text-7 m-0;
   }

@@ -1,5 +1,9 @@
 .header-special {
   @apply fixed top-0 left-0 right-0 bg-white z-9999;
+  .container {
+    @apply down_sm:px-0 xl:px-0 2xl:max-w-full;
+  }
+  
   // setup for html
   li {
     @apply cursor-pointer;  
@@ -42,10 +46,8 @@
   .header-title p {
     @apply text-8 down_sm:text-7;
   }
-  .header-title .see-off {
-    strong {
-      @apply font-bold text-7;
-    }
+  .header-title .see-off strong {
+    @apply font-bold text-7;
   }
 
   .header-nav-desktop .nav {

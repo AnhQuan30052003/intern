@@ -1,4 +1,7 @@
 .mod-10-milion {
+  .container {
+    @apply 2xl:px-0 xl:py-30;
+  }
   .content h2 {
     @apply m-0 leading-21 md:leading-24;
   }

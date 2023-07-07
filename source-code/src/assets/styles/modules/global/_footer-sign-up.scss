@@ -1,4 +1,8 @@
 .footer-sign-up {
+  .container {
+    @apply px-0;
+  }
+
   .title h5 {
     @apply text-11.5 mb-14 md:mb-9 xl:text-9;
   }
