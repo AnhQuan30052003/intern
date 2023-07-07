@@ -3,7 +3,7 @@
     @apply px-0 max-w-full;
   }
   .content h3 {
-    @apply text-14 md:text-12 2xl:text-18 font-bold m-0;
+    @apply text-14 md:text-12 2xl:text-18 font-bold m-0 text-dark-grey;
   }
   .content p {
     @apply text-7 font-bold text-blue-300 hover:text-primary-300;
