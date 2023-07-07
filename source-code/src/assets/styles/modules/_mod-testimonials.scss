@@ -5,6 +5,7 @@
   .btn-next {
     @apply absolute block p-0 cursor-pointer border-none outline-none text-15 -top-35 w-15
       md:top-100p xl:right-none;
+    transition: 0.25s;
     &:hover {
       scale: 1.3;
     }

@@ -5,6 +5,7 @@
     @apply absolute block p-0 cursor-pointer text-blue-300 border-none outline-none text-15 -top-45 w-15
       xl:right-none xl:top-140
       2xl:top-145;
+    transition: 0.25s;
     &:hover {
       scale: 1.3;
     }

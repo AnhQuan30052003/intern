@@ -23,9 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .mod-connect {
-    .images {
-      transform: 0px;
-    }
+  .mod-connect .container .main .images {
+    translate: 0px;
   }
 }
