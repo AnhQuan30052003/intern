@@ -1,6 +1,6 @@
 @layer base {
   .module {
-    font-family: 'Plus Jakarta Sans';
+    @apply font-plus;
   }
   body {
     @apply text-base text-black xl:text-lg;

@@ -10,7 +10,7 @@ export default class Special {
     }
   }
   searchBox() {
-  var s = '.search-frame-desktop';
+    var s = '.search-frame-desktop';
     $('.icon-search-desktop').click(function() {
       $('.right-icon').hide();
       $(s).removeClass('hidden');
