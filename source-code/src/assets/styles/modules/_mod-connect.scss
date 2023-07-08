@@ -3,9 +3,9 @@
     @apply px-0 max-w-full;
   }
   .content h3 {
-    @apply text-14 md:text-12 2xl:text-18 font-bold m-0 text-dark-grey;
+    @apply text-14 md:text-12 2xl:text-18 font-bold m-0 text-hush-black;
   }
-  .content p {
+  .content a {
     @apply text-7 font-bold text-blue-300 hover:text-primary-300;
   } 
   .images {
