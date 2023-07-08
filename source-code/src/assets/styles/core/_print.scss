@@ -1,3 +1,4 @@
+// Setup default for Print
 $white: #fff;
 a::after {
   content: '';
@@ -209,7 +210,6 @@ article a[href^='#']::after {
   display: none;
 }
 
-
 address,
 dt,
 dd,
@@ -231,6 +231,7 @@ ol {
 
 .slick-list {
   .slick-slide {
+    display: block;
     margin: 0 auto;
   }
 }
@@ -270,7 +271,103 @@ h6 {
 .form-contact {
   display: none;
 }
+button {
+  @apply hidden;
+}
 
+// Setup follow modules
 @media print {
-  
+  body {
+
+  }
+
+  .header-special {
+    .header-title {
+      @apply hidden;
+    }
+    .container {
+      .main {
+        .header-nav-desktop {
+          .nav {
+            @apply hidden;
+          }
+        }
+        .header-nav-mobile {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+  .mod-adjust {
+    .container {
+      .main {
+        @apply flex flex-col-reverse;
+        .banner {
+          img {
+            @apply hidden;
+          }
+          img:nth-child(4) {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+
+  .mod-10-milion {
+    img {
+      @apply hidden;
+    }
+  }
+
+  .mod-turn-your-bedroom {
+    .container {
+      .slider {
+        .slick-list {
+          // @apply block;
+        }
+      }
+    }
+  }
+  .mod-meet-the-quest {
+    a {
+      @apply hidden;
+    }
+  }
+  .mod-testimonials {
+    a {
+      @apply hidden;
+    }
+  }
+  .mod-scary-mommy {
+    .content-logo {
+      @apply hidden;
+    }
+  }
+  .mod-the-latest {
+    .container {
+      .main {
+        .title {
+          a {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+  .mod-connect {
+    @apply hidden;
+  }
+  .footer-sign-up {
+    .container {
+      .main {
+        .logo,
+        .input,
+        .contact .icons {
+          @apply hidden;
+        }
+      }
+    }
+  }
 }
