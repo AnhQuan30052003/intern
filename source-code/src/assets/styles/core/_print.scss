@@ -224,14 +224,13 @@ pre {
 
 ul,
 ol {
-  list-style: square;
+  list-style: circle;
   margin-left: 18pt;
   margin-bottom: 20pt;
 }
 
 .slick-list {
   .slick-slide {
-    display: block;
     margin: 0 auto;
   }
 }
@@ -278,16 +277,23 @@ button {
 // Setup follow modules
 @media print {
   body {
-
   }
 
   .header-special {
+    height: 100px;
     .header-title {
       @apply hidden;
     }
     .container {
       .main {
         .header-nav-desktop {
+          .logo {
+            a {
+              img {
+                @apply mx-auto block;
+              }
+            }
+          }
           .nav {
             @apply hidden;
           }
@@ -300,8 +306,10 @@ button {
   }
 
   .mod-adjust {
+    height: 580px;
     .container {
       .main {
+        padding-top: 50px;
         @apply flex flex-col-reverse;
         .banner {
           img {
@@ -316,12 +324,17 @@ button {
   }
 
   .mod-10-milion {
+    height: 710px;
     img {
       @apply hidden;
+    }
+    .content {
+      margin-bottom: 100px;
     }
   }
 
   .mod-turn-your-bedroom {
+    @apply hidden;
     .container {
       .slider {
         .slick-list {
@@ -330,21 +343,41 @@ button {
       }
     }
   }
+
   .mod-meet-the-quest {
     a {
       @apply hidden;
     }
+    .item-image {
+      margin-bottom: 40px;
+    }
   }
+
   .mod-testimonials {
+    @apply hidden;
     a {
       @apply hidden;
     }
   }
+
   .mod-scary-mommy {
+    height: 710px;
     .content-logo {
       @apply hidden;
     }
+    .frame-image {
+      height: 590px;
+      .image {
+        img {
+          @apply block;
+        }
+      }
+    }
+    .content {
+      margin-top: -100px;
+    }
   }
+
   .mod-the-latest {
     .container {
       .main {
@@ -353,19 +386,48 @@ button {
             @apply hidden;
           }
         }
+        .box {
+          .item {
+            height: 590px;
+            .item-image {
+              margin-bottom: 50px;
+            }
+          }
+        }
       }
     }
   }
+
   .mod-connect {
     @apply hidden;
   }
+
   .footer-sign-up {
+    @apply mt-123;
     .container {
       .main {
         .logo,
         .input,
         .contact .icons {
           @apply hidden;
+        }
+
+        .box-input {
+          .title,
+          .contact .phone {
+            text-align: center;
+          }
+        }
+        .infor {
+          .row-header {
+            ul li:first-child {
+              list-style: none;
+              margin-left: -20px;
+            }
+          }
+          .row-body {
+            padding: 50px 0;
+          }
         }
       }
     }
