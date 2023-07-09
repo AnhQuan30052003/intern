@@ -75,8 +75,7 @@ export default class Special {
     }
 
     $('.back').click(function() {
-      $('.menu-level-2').removeClass('open');
-      $('.menu-level-2').removeClass('now');
+      $('.menu-level-2').removeClass('open now');
       $('.menu-level-2').addClass('close');
     });
   }
