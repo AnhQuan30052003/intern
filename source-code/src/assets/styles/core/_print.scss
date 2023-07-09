@@ -334,14 +334,7 @@ button {
   }
 
   .mod-turn-your-bedroom {
-    @apply hidden;
-    .container {
-      .slider {
-        .slick-list {
-          // @apply block;
-        }
-      }
-    }
+    // @apply hidden;
   }
 
   .mod-meet-the-quest {
@@ -354,7 +347,7 @@ button {
   }
 
   .mod-testimonials {
-    @apply hidden;
+    // @apply hidden;
     a {
       @apply hidden;
     }

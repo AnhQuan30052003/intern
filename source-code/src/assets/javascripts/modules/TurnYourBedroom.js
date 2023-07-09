@@ -18,8 +18,8 @@ export default class TurnYourBedroom {
       variableWidth: true,
       
       dotsClass: 'btn-dots',
-      prevArrow: '<button class="btn-prev arrows h1 text-primary-100"><span class="icomoon icon-chevron-left"></span><span class="sr-only">Prev slider</span></button>',
-      nextArrow: '<button class="btn-next arrows h1 text-primary-100"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>',
+      prevArrow: '<button class="btn-prev arrows h1 text-blue-300"><span class="icomoon icon-chevron-left"></span><span class="sr-only">Prev slider</span></button>',
+      nextArrow: '<button class="btn-next arrows h1 text-blue-300"><span class="icomoon icon-chevron-right"></span><span class="sr-only">Next slider</span></button>',
 
       responsive: [
         {
