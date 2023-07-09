@@ -2,10 +2,12 @@
   <div class="container">
     <div class="main w-full xl:relative -mt-16 xl:mt-0">
       <div class="banner xl:relative">
-        <img class="w-full object-cover md:hidden" src="../../assets/images/adjust-mobile.jpg" alt="adjust-mobile">
-        <img class="w-full object-cover hidden md:block xl:hidden" src="../../assets/images/adjust-tablet.jpg" alt="adjust-tablet">
-        <img class="w-full object-cover hidden xl:block 2xl:hidden" src="../../assets/images/adjust-desktop-1.jpg" alt="adjust-desktop-1">
-        <img class="w-full object-cover hidden 2xl:block 2xl:h-420" src="../../assets/images/adjust-desktop-2.jpg" alt="adjust-desktop-2">
+        <picture class="image-banner w-full">
+          <source media="(min-width:1440px)" srcset="../../assets/images/adjust-desktop-2.jpg">
+          <source media="(min-width:1200px)" srcset="../../assets/images/adjust-desktop-1.jpg">
+          <source media="(min-width:768px)" srcset="../../assets/images/adjust-tablet.jpg">
+          <img class="w-full object-cover 2xl:h-420" src="../../assets/images/adjust-mobile.jpg" alt="banner">
+        </picture>
 
         <button class="btn-play absolute hidden 2xl:flex bottom-12.5 right-12.5 cursor-pointer items-center gap-5">
           <span class="flex items-center">
