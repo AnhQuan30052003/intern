@@ -1,7 +1,6 @@
 .accordion-trigger {
   &.js-expand {
     @apply mb-5;
-
     .accordion-toggle-icon {
       transform: rotate(180deg);
     }
