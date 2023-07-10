@@ -21,6 +21,27 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  ._border {
+    border: solid 1px;
+  }
+  
+  .change-color {
+    animation: animation-color 5s linear infinite alternate;
+  }
+  @keyframes animation-color {
+    0% {color: #ccc;}
+    10% {color: #1abc9c;}
+    20% {color: #e67e22;}
+    30% {color: #2980b9;}
+    40% {color: #8e44ad;}
+    50% {color: #2c3e50;}
+    60% {color: #f1c40f;}
+    70% {color: #bdc3c7;}
+    80% {color: #e67e22;}
+    90% {color: #1abc9c;}
+    90% {color: #3498db;}
+    100% {color: #34495e;}
+  }
 }
 
 .text-inherit-child {
@@ -52,8 +73,4 @@
 
 #__bs_notify__{
   display: none !important;
-}
-
-._border {
-  border: solid 1px;
 }

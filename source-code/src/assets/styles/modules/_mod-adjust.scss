@@ -12,7 +12,7 @@
     }
   }
   .frame .box-content h1 {
-    @apply text-hush-black;
+    @apply text-hush-black xl:change-color;
   }
   .frame .box-content p {
     @apply font-medium text-10 md:text-9 leading-80p mb-20 xl:mb-23 text-dark-grey;

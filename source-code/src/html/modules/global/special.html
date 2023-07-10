@@ -14,7 +14,10 @@
       <div class="header-nav-desktop 2xl:px-35.5 w-full h-70 flex down_xl:hidden">
         <div class="logo h-full w-90 relative flex items-end">
           <a href="javascript:;" class="bg-blue-500 w-full down_2xl:h-auto h-80 absolute z-1 top-0 right-0 flex items-end justify-center">
-            <img class="w-73" src="../../assets/images/Logo.svg" alt="Logo Ergomotion">
+            <picture>
+              <source media="(min-width:1200px)" srcset="../../assets/images/Logo.svg">
+              <img class="w-73" src="{{imagesBase64}}" alt="Logo Ergomotion">
+            </picture>
           </a>
         </div>
 
@@ -110,7 +113,10 @@
                     </button>
                   </div>
                   <div class="image w-1/2">
-                    <img src="../../assets/images/photo-Adjustable-bases.jpg" alt="photo-Adjustable-bases">
+                    <picture>              
+                      <source media="(min-width:1200px)" srcset="../../assets/images/photo-Adjustable-bases.jpg">
+                      <img src="{{imagesBase64}}" alt="photo-Adjustable-bases">
+                    </picture>
                   </div>
                 </div>
               </li>
@@ -127,7 +133,10 @@
                     </ul>
                   </div>
                   <div class="image w-1/2">
-                    <img src="../../assets/images/photo-Base-Accessories.jpg" alt="photo-Base-Accessories">
+                    <picture>              
+                      <source media="(min-width:1200px)" srcset="../../assets/images/photo-Base-Accessories.jpg">
+                      <img src="{{imagesBase64}}" alt="photo-Base-Accessories">
+                    </picture>
                   </div>
                 </div>
               </li>
@@ -146,7 +155,10 @@
                     </ul>
                   </div>
                   <div class="image w-2/3">
-                    <img src="../../assets/images/photo-Bedding-&-pillows.jpg" alt="photo-Bedding-&-pillows">
+                    <picture>              
+                      <source media="(min-width:1200px)" srcset="../../assets/images/photo-Bedding-&-pillows.jpg">
+                      <img src="{{imagesBase64}}" alt="photo-Bedding-&-pillows">
+                    </picture>
                   </div>
                 </div>
               </li>
@@ -188,7 +200,10 @@
       <div class="header-nav-mobile w-full h-35 xl:hidden flex justify-between top-0 leff-0 down_sm:pr-13">
         <div class="logo h-full w-93.5 bg-blue-500 flex justify-center pb-5">
           <a href="javascript:;" class="block w-auto h-full">
-            <img class="w-50 h-full object-cover" src="../../assets/images/Logo.svg" alt="Logo Ergomotion">
+            <picture>              
+              <source media="(max-width:1199px)" srcset="../../assets/images/Logo.svg">
+              <img class="w-50 h-full object-cover" src="{{imagesBase64}}" alt="Logo Ergomotion">
+            </picture>
           </a>
         </div>
 
@@ -216,7 +231,7 @@
           </div>
         </div>
 
-        <div class="search-frame-mobile hidden px-24 down_sm:px-0 fixed z-9999 h-28 top-72 left-0 right-0">
+        <div class="search-frame-mobile hidden px-24 down_sm:px-0 fixed z-9999 h-28 top-70 left-0 right-0">
           <div class="wrapper h-full w-full flex justify-between">
             <input type="text" class="pl-10 border-none outline-none" placeholder="Search*" aria-label="Search box">
             <div class="w-30 h-full flex justify-center items-center">
