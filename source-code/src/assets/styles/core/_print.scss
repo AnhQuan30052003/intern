@@ -1,5 +1,4 @@
-// Setup default for Print
-$white: #fff;
+ // Setup default for Print
 a::after {
   content: '';
 }
@@ -19,36 +18,19 @@ body {
   padding: 0;
   overflow-x: visible;
   overflow-y: visible;
-  background: $white;
+  background: #fff;
   color: #000;
 }
 
 #content,
-#page,
 body,
 html,
-#wrapper,
-.container,
-.group-arrows {
+.container {
   width: 100%;
   margin: 0;
   float: none;
   padding: 0;
   max-width: none;
-}
-
-#banner {
-  padding-top: 0;
-  .d-table {
-    display: block;
-    height: auto;
-    h1,
-    p {
-      br {
-        display: none;
-      }
-    }
-  }
 }
 
 .col-md-5,
@@ -93,21 +75,15 @@ html,
     }
   }
 }
+
 .mess-print{
   padding: 40px 10px;
   font-size: 30px;
   text-align: center;
 }
-@page {
-  margin: 1cm;
-}
 
 #main-content {
   padding-top: 0;
-}
-
-article {
-  page-break-before: always;
 }
 
 body,
@@ -171,10 +147,6 @@ img {
   max-width: 700px;
 }
 
-.d-table {
-  height: auto;
-}
-
 table,
 pre {
   page-break-inside: avoid;
@@ -186,11 +158,6 @@ dl {
   page-break-before: avoid;
 }
 
-article a[href^='#']::after {
-  content: '';
-}
-
-.embed-youtube,
 .embed-responsive {
   position: absolute;
   height: 0;
@@ -202,7 +169,6 @@ article a[href^='#']::after {
 .read-more,
 .mod-form,
 #header .col-menu,
-.col-langue,
 .skip-link,
 .rotation-wrapper,
 .controls
@@ -229,12 +195,6 @@ ol {
   margin-bottom: 20pt;
 }
 
-.slick-list {
-  .slick-slide {
-    margin: 0 auto;
-  }
-}
-
 div,
 section,
 p,
@@ -250,12 +210,6 @@ h6 {
   transform: none;
   height: auto;
   position: static;
-}
-
-.slick-dotted:not(.accordion),
-.slick-dots,
-.slick-arrow {
-  display: none;
 }
 
 .navbar-expand-lg,
@@ -274,155 +228,117 @@ button {
   @apply hidden;
 }
 
-// Setup follow modules
-@media print {
-  body {
-  }
+// setup for slick module
+.slick-track {
+  display: table !important;
+}
 
-  .header-special {
-    height: 100px;
-    .header-title {
-      @apply hidden;
-    }
-    .container {
-      .main {
-        .header-nav-desktop {
-          .logo {
-            a {
-              img {
-                @apply mx-auto block;
-              }
-            }
-          }
-          .nav {
-            @apply hidden;
-          }
-        }
-        .header-nav-mobile {
-          @apply hidden;
-        }
-      }
+.slick-slider .slick-list,
+.slick-slider .slick-track,
+.slick-slider .slick-slide {
+  width: auto !important;
+  height: auto !important;
+  transform: none !important;
+  overflow: visible !important;
+  -o-transform: none !important;
+  -webkit-transform: none !important;
+}
+
+.slick-arrow,
+.slick-dots,
+.btn-dots,
+.slick-cloned,
+.arrows,
+.sr-only {
+  display: none !important;
+}
+
+.slick-list .slick-slide:not(.slick-cloned) {
+  display: inline-table;
+}
+
+.slick-slider .slick-slider {
+  opacity: 1 !important;
+  left: 0 !important;
+}
+
+// Code for modules
+// hidden
+.header-special .header-title,
+.header-nav-mobile,
+.mod-adjust .container .main .banner img,
+.mod-10-milion img,
+.mod-turn-your-bedroom a,
+.mod-meet-the-quest a,
+.mod-testimonials a,
+.mod-testimonials .title-stars,
+.mod-testimonials .items-footer,
+.mod-scary-mommy .content-logo,
+.mod-the-latest .container .main .title a,
+.mod-connect,
+.footer-sign-up .container .main .logo,
+.footer-sign-up .container .main .input,
+.footer-sign-up .container .main .contact .icons,
+.header-nav-desktop .nav {
+  @apply hidden;
+}
+
+// show
+.header-nav-desktop .logo a img {
+  @apply block mx-auto;
+}
+.mod-adjust {
+  @apply h-290;
+  .container .main {
+    @apply flex flex-col-reverse pt-25;    
+  }
+  .container .main .banner img:nth-child(4) {
+    @apply block;
+  }
+}
+.mod-10-milion {
+  @apply h-355;
+  .content {
+    @apply mb-50;
+  }
+}
+.mod-meet-the-quest .item-image {
+  @apply mb-20;
+}
+.mod-scary-mommy {
+  @apply h-355;
+  .frame-image {
+    @apply h-295;
+    .image img {
+      @apply block;
     }
   }
-
-  .mod-adjust {
-    height: 580px;
-    .container {
-      .main {
-        padding-top: 50px;
-        @apply flex flex-col-reverse;
-        .banner {
-          img {
-            @apply hidden;
-          }
-          img:nth-child(4) {
-            @apply block;
-          }
-        }
-      }
-    }
+  .content {
+    @apply -mt-50;
   }
-
-  .mod-10-milion {
-    height: 710px;
-    img {
-      @apply hidden;
-    }
-    .content {
-      margin-bottom: 100px;
-    }
-  }
-
-  .mod-turn-your-bedroom {
-    // @apply hidden;
-  }
-
-  .mod-meet-the-quest {
-    a {
-      @apply hidden;
-    }
+}
+.mod-the-latest .container .main .box {
+  .item {
+    @apply h-295;
     .item-image {
-      margin-bottom: 40px;
+      @apply mb-25;
     }
   }
-
-  .mod-testimonials {
-    // @apply hidden;
-    a {
-      @apply hidden;
-    }
-  }
-
-  .mod-scary-mommy {
-    height: 710px;
-    .content-logo {
-      @apply hidden;
-    }
-    .frame-image {
-      height: 590px;
-      .image {
-        img {
-          @apply block;
-        }
+}
+.footer-sign-up {
+  @apply mt-123;
+  .container .main {
+    .box-input {
+      .title,
+      .contact .phone {
+        @apply text-center;
       }
     }
-    .content {
-      margin-top: -100px;
+    .infor .row-header ul li:first-child {
+      @apply -ml-10 list-none;
     }
-  }
-
-  .mod-the-latest {
-    .container {
-      .main {
-        .title {
-          a {
-            @apply hidden;
-          }
-        }
-        .box {
-          .item {
-            height: 590px;
-            .item-image {
-              margin-bottom: 50px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .mod-connect {
-    @apply hidden;
-  }
-
-  .footer-sign-up {
-    @apply mt-123;
-    .container {
-      .main {
-        .logo,
-        .input,
-        .contact .icons {
-          @apply hidden;
-        }
-
-        .box-input {
-          .title,
-          .contact .phone {
-            text-align: center;
-          }
-        }
-        .infor {
-          .row-header {
-            ul li:first-child {
-              list-style: none;
-              margin-left: -20px;
-            }
-          }
-          .row-body {
-            padding: 50px 0;
-          }
-        }
-      }
+    .infor .row-body {
+      @apply py-25;
     }
   }
 }
