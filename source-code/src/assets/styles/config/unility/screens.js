@@ -3,7 +3,7 @@ const Screens = {
   'md': '768px',
   'lg': '992px',
   'xl': '1200px',
-  '2xl': '1440px',
+  '2xl': '1700px',
   '2k': '2000px',
   'down_2xl': {'max': '1439px'},
   'down_xl': {'max': '1199px'},
